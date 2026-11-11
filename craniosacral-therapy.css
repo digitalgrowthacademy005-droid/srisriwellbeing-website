@@ -1,0 +1,3081 @@
+/* =========================================================
+   SRI SRI WELLBEING – PANCHAKARMA PAGE
+   Main stylesheet: desktop / base styles
+========================================================= */
+
+:root {
+  --pk-bg: #f7f3eb;
+  --pk-white: #fffdfa;
+  --pk-forest: #351b10;
+  --pk-green: #43271b;
+  --pk-sage: #c9961a;
+  --pk-muted: #6f6258;
+  --pk-soft: #eee8df;
+  --pk-gold: #c9961a;
+  --pk-border: #e8ded3;
+  --pk-cream: #f7f3eb;
+  --pk-brown: #351b10;
+  --pk-shadow: 0 18px 50px rgba(53, 27, 16, .10);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--pk-muted);
+  background: var(--pk-white);
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+
+/* HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(247,243,235,.97);
+  border-bottom: 1px solid rgba(53,27,16,.09);
+  box-shadow: 0 5px 24px rgba(53,27,16,.05);
+}
+.header-container {
+  width: min(1440px, 92%);
+  min-height: 82px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.logo { display: inline-flex; align-items: center; text-decoration: none; }
+.logo img { display: block; width: 105px; max-height: 68px; object-fit: contain; }
+.header-actions { display: flex; align-items: center; gap: 12px; }
+.header-call-button, .contact-button {
+  min-height: 42px;
+  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid #cfc3b7;
+  border-radius: 40px;
+  color: var(--pk-brown);
+  background: #fffdfa;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: .25s ease;
+}
+.header-call-button:hover { border-color: var(--pk-sage); color: var(--pk-green); }
+.contact-button { color: #fffdfa; background: var(--pk-brown); border-color: var(--pk-brown); }
+.contact-button:hover { background: var(--pk-green); border-color: var(--pk-green); }
+.call-icon { font-size: 14px; }
+.menu-toggle {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  background: var(--pk-brown);
+}
+.menu-toggle span { width: 17px; height: 1.5px; background: #fffdfa; transition: .25s ease; }
+.menu-toggle:hover { background: var(--pk-green); }
+
+/* SLIDE-IN NAVIGATION */
+.main-menu {
+  position: fixed;
+  z-index: 1002;
+  top: 0;
+  right: 0;
+  width: min(390px, 88vw);
+  height: 100dvh;
+  padding: 34px 30px;
+  background: var(--pk-cream);
+  transform: translateX(105%);
+  visibility: hidden;
+  transition: transform .4s cubic-bezier(.22,.7,.2,1), visibility .4s;
+}
+.main-menu.is-open { transform: translateX(0); visibility: visible; }
+.menu-inner { min-height: 100%; display: flex; flex-direction: column; }
+.menu-top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 22px; border-bottom: 1px solid #dfd7cb; }
+.menu-label { color: var(--pk-gold); font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+.menu-close {
+  width: 38px; height: 38px; border: 0; border-radius: 4px;
+  color: #fffdfa; background: var(--pk-brown); font-size: 22px; cursor: pointer;
+}
+.menu-links { list-style: none; padding: 18px 0 0; margin: 0; }
+.menu-links li { border-bottom: 1px solid #e4ddd3; }
+.menu-link {
+  min-height: 66px; display: grid; grid-template-columns: 28px 1fr 20px;
+  align-items: center; gap: 10px; text-decoration: none; color: var(--pk-brown);
+}
+.menu-link span { color: var(--pk-gold); font-size: 10px; font-weight: 700; }
+.menu-link strong { font-size: 20px; font-weight: 500; }
+.menu-link i { color: var(--pk-gold); font-style: normal; transition: transform .2s; }
+.menu-link:hover strong { color: var(--pk-sage); }
+.menu-link:hover i { transform: translate(3px,-3px); }
+.menu-bottom { margin-top: auto; padding-top: 20px; display: flex; justify-content: space-between; color: #887c70; font-size: 9px; font-weight: 700; letter-spacing: 1.2px; }
+.menu-overlay {
+  position: fixed; z-index: 1001; inset: 0; background: rgba(20,18,15,.48);
+  opacity: 0; visibility: hidden; transition: .3s ease;
+}
+.menu-overlay.is-visible { opacity: 1; visibility: visible; }
+body.menu-open { overflow: hidden; }
+
+
+
+
+
+/* =========================================================
+   SRI SRI WELLBEING — PREMIUM WEBSITE HEADER
+   Fixed Header | Ivory | Espresso Brown | Antique Gold
+========================================================= */
+
+/* HEADER */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid rgba(53, 24, 13, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* SCROLLED HEADER */
+.site-header.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 8px 30px rgba(53, 24, 13, 0.07);
+}
+
+/* HEADER CONTAINER */
+.header-container {
+    width: 100%;
+    max-width: 1480px;
+    height: 82px;
+    margin: 0 auto;
+    padding: 0 4.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+.site-header .logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    z-index: 10002;
+}
+
+.site-header .logo img {
+    display: block;
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.site-header .logo:hover img {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* HEADER ACTIONS */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    z-index: 10002;
+}
+
+/* PHONE BUTTON */
+.header-call-button {
+    position: relative;
+    height: 44px;
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #35180d;
+    border: 1px solid rgba(53, 24, 13, 0.45);
+    border-radius: 25px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.35s ease, background 0.35s ease,
+                border-color 0.35s ease, transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.header-call-button .call-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #35180d;
+    transition: color 0.35s ease;
+}
+
+.header-call-button:hover {
+    background: #f7f3ec;
+    color: #35180d;
+    border-color: #c69228;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(53, 24, 13, 0.08);
+}
+
+.header-call-button:hover .call-icon {
+    color: #c69228;
+}
+
+.header-call-button:active {
+    transform: translateY(0);
+}
+
+/* CONTACT BUTTON */
+.contact-button {
+    position: relative;
+    height: 44px;
+    min-width: 108px;
+    padding: 0 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #35180d;
+    color: #ffffff;
+    border: 1px solid #35180d;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.35s ease, background 0.35s ease,
+                border-color 0.35s ease, transform 0.35s ease;
+}
+
+.contact-button::after {
+    content: "";
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    width: 0;
+    height: 1px;
+    background: #c69228;
+    transition: width 0.35s ease;
+}
+
+.contact-button:hover {
+    background: #c69228;
+    color: #ffffff;
+    border-color: #c69228;
+    transform: translateY(-2px);
+}
+
+.contact-button:hover::after {
+    width: 22px;
+}
+
+/* HAMBURGER BUTTON */
+.menu-toggle {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #ffffff;
+    border: 1px solid #35180d;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 10002;
+    -webkit-tap-highlight-color: transparent;
+    transition: background 0.35s ease, border-color 0.35s ease,
+                transform 0.35s ease;
+}
+
+.menu-toggle:hover {
+    background: #f7f3ec;
+    border-color: #c69228;
+    transform: translateY(-2px);
+}
+
+/* HAMBURGER LINES */
+.menu-toggle span {
+    display: block;
+    width: 19px;
+    height: 1px;
+    margin: 0;
+    background: #35180d;
+    transform-origin: center;
+    transition: transform 0.4s cubic-bezier(.77, 0, .18, 1),
+                opacity 0.25s ease, background 0.3s ease;
+}
+
+/* HAMBURGER TO X */
+.site-header.menu-open .menu-toggle {
+    background: #35180d;
+    border-color: #35180d;
+    transform: none;
+}
+
+.site-header.menu-open .menu-toggle span {
+    background: #ffffff;
+}
+
+.site-header.menu-open .menu-toggle span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.site-header.menu-open .menu-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.site-header.menu-open .menu-toggle span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 82px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 9990;
+
+    background: transparent;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.35s ease;
+}
+
+.site-header.menu-open .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+}
+
+/* SLIDE-IN MENU */
+.main-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(470px, 88vw);
+    height: 100vh;
+    height: 100dvh;
+    background: #f7f3ec;
+    z-index: 10000;
+    transform: translateX(100%);
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    box-shadow: -25px 0 70px rgba(53, 24, 13, 0.14);
+    transition: transform 0.6s cubic-bezier(.77, 0, .18, 1),
+                visibility 0.6s ease;
+}
+
+.site-header.menu-open .main-menu {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+/* MENU INNER */
+.menu-inner {
+    min-height: 100%;
+    padding: 105px 50px 35px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* MENU TOP */
+.menu-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(53, 24, 13, 0.12);
+}
+
+.menu-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: #c69228;
+}
+
+/* CLOSE BUTTON */
+.menu-close {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #35180d;
+    border: 1px solid #35180d;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.menu-close:hover {
+    background: #c69228;
+    color: #ffffff;
+    border-color: #c69228;
+}
+
+/* MENU LINKS */
+.menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 24px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-links li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(53, 24, 13, 0.09);
+}
+
+.menu-link {
+    position: relative;
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: 44px 1fr 30px;
+    align-items: center;
+    padding: 0;
+    color: #35180d;
+    text-decoration: none;
+    transition: padding 0.35s ease, color 0.3s ease;
+}
+
+.menu-link span {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    color: #c69228;
+}
+
+.menu-link strong {
+    font-family: inherit;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: inherit;
+}
+
+.menu-link i {
+    font-size: 18px;
+    font-style: normal;
+    color: #c69228;
+    transition: transform 0.35s ease;
+}
+
+.menu-link:hover {
+    padding-left: 8px;
+    color: #c69228;
+}
+
+.menu-link:hover i {
+    transform: translate(4px, -4px);
+}
+
+/* MENU BOTTOM */
+.menu-bottom {
+    margin-top: auto;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid rgba(53, 24, 13, 0.12);
+}
+
+.menu-bottom span {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #6f625b;
+}
+
+/* BODY LOCK */
+body.menu-is-open,
+body.menu-open {
+    overflow: hidden;
+}
+
+/* ACCESSIBILITY */
+.menu-toggle:focus-visible,
+.menu-close:focus-visible,
+.contact-button:focus-visible,
+.header-call-button:focus-visible,
+.menu-link:focus-visible {
+    outline: 2px solid #c69228;
+    outline-offset: 3px;
+}
+
+/* RESPONSIVE HEADER */
+@media (max-width: 768px) {
+    .header-container {
+        height: 72px;
+        padding: 0 5%;
+    }
+
+    .site-header .logo img {
+        max-width: 82px;
+        max-height: 58px;
+    }
+
+    .header-actions {
+        gap: 7px;
+    }
+
+    .header-call-button {
+        height: 38px;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    .contact-button {
+        height: 38px;
+        min-width: 82px;
+        padding: 0 13px;
+        font-size: 10px;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-menu {
+        width: min(430px, 90vw);
+    }
+
+    .menu-inner {
+        padding: 92px 28px 28px;
+    }
+
+    .menu-link {
+        min-height: 68px;
+    }
+
+    .menu-link strong {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-call-button {
+        padding: 0 8px;
+    }
+
+    .header-call-button .call-icon {
+        display: none;
+    }
+
+    .contact-button {
+        padding: 0 10px;
+    }
+
+    .site-header .logo img {
+        max-width: 70px;
+    }
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    .site-header,
+    .site-header .logo img,
+    .header-call-button,
+    .contact-button,
+    .contact-button::after,
+    .menu-toggle,
+    .menu-toggle span,
+    .menu-overlay,
+    .main-menu,
+    .menu-link,
+    .menu-link i,
+    .menu-close {
+        transition: none !important;
+    }
+}
+
+
+
+
+
+
+/* PANCHAKARMA SECTION */
+.panchakarma-section {
+  width: 100%; padding: 90px 5%; margin-top: 0;
+  background: var(--pk-bg); color: #43271b; overflow: hidden;
+}
+.panchakarma-container {
+  max-width: 1440px; margin: auto; display: grid;
+  grid-template-columns: 1.12fr .88fr; gap: 70px; align-items: center;
+}
+.panchakarma-content { max-width: 700px; }
+.eyebrow {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 25px;
+  color: #a77a18; font-size: 11px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+}
+.eyebrow-line { width: 55px; height: 1px; background: var(--pk-gold); }
+.panchakarma-title {
+  margin: 0 0 25px; color: var(--pk-forest);
+  font: 600 clamp(48px,5.2vw,82px)/1 "Cormorant Garamond",serif;
+  letter-spacing: -2px;
+}
+.panchakarma-title span { display: block; color: var(--pk-sage); }
+.panchakarma-intro { max-width: 650px; margin: 0 0 38px; color: #776b60; font-size: 16px; line-height: 1.85; }
+.panchakarma-features { display: grid; gap: 28px; margin-bottom: 38px; }
+.panchakarma-feature { display: grid; grid-template-columns: 58px 1fr; gap: 20px; align-items: start; }
+.feature-icon {
+  width: 58px; height: 58px; display: flex; align-items: center; justify-content: center;
+  border: 1px solid #d6c9bb; border-radius: 14px; color: #a77a18; background: var(--pk-soft);
+}
+.feature-icon svg { width: 28px; height: 28px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.feature-text { padding-left: 20px; border-left: 1px solid var(--pk-gold); }
+.feature-text h3 { margin: 0 0 8px; color: var(--pk-forest); font: 600 23px/1.25 "Cormorant Garamond",serif; }
+.feature-text p { margin: 0; color: #776b60; font-size: 14px; line-height: 1.8; }
+.panchakarma-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.panchakarma-btn {
+  min-height: 52px; padding: 14px 25px; border-radius: 50px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  font-family: inherit; font-size: 14px; font-weight: 700; text-decoration: none;
+  transition: transform .25s ease, background .25s ease;
+}
+.panchakarma-btn:hover { transform: translateY(-3px); }
+.whatsapp-btn { color: #fffdfa; background: var(--pk-green); box-shadow: 0 7px 18px rgba(67,39,27,.15); }
+.whatsapp-btn:hover { background: #6a4430; }
+.panchakarma-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.panchakarma-visual { position: relative; min-height: 590px; display: flex; align-items: center; }
+.therapy-image-wrap {
+  position: relative; width: 72%; height: 550px; overflow: hidden;
+  border-radius: 24px; background: #eee8df;
+  box-shadow: 0 18px 45px rgba(53,27,16,.12);
+}
+.therapy-image-wrap img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+.therapy-image-wrap::after { content: ""; position: absolute; inset: 0; border: 1px solid rgba(255,253,250,.4); border-radius: inherit; pointer-events: none; }
+.appointment-card {
+  position: absolute; z-index: 2; top: 50%; right: 0; transform: translateY(-50%);
+  width: 48%; padding: 32px 28px; border: 1px solid var(--pk-border);
+  border-radius: 18px; background: #fffdfa; box-shadow: var(--pk-shadow);
+}
+.appointment-card h2 { margin: 0 0 16px; color: var(--pk-forest); font: 600 27px/1.3 "Cormorant Garamond",serif; }
+.card-accent { width: 45px; height: 2px; margin-bottom: 20px; background: var(--pk-gold); }
+.appointment-card > p { margin: 0 0 22px; color: #776b60; font-size: 14px; line-height: 1.75; }
+.contact-list { display: grid; gap: 15px; margin-bottom: 25px; }
+.appointment-card .contact-item {
+  display: grid; grid-template-columns: 35px 1fr; gap: 12px; align-items: center;
+  color: #6f6258 !important; font-size: 13px; line-height: 1.7;
+}
+.appointment-card .contact-item > div:last-child { color: #6f6258 !important; }
+.appointment-card .contact-item strong { color: var(--pk-forest) !important; font-weight: 700; }
+.appointment-card .contact-item a { color: #6f6258 !important; text-decoration: none; }
+.appointment-card .contact-item a:hover { color: var(--pk-sage) !important; }
+.contact-icon {
+  width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;
+  border: 1px solid #dce8d7; border-radius: 50%; color: #a77a18; background: var(--pk-soft);
+}
+.contact-icon svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.call-btn { width: 100%; color: #fffdfa; background: linear-gradient(120deg,#c9961a,#6a4430); }
+.call-btn:hover { background: var(--pk-green); }
+
+/* FAQ */
+.faq-section { padding: 90px 5%; background: #fffdfa; color: var(--pk-forest); }
+.faq-container { max-width: 1000px; margin: auto; }
+.faq-heading { max-width: 720px; margin: 0 auto 42px; text-align: center; }
+.faq-eyebrow { color: var(--pk-gold); font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+.faq-heading h2 { margin: 14px 0; color: var(--pk-forest); font: 600 clamp(36px,5vw,56px)/1.1 "Cormorant Garamond",serif; }
+.faq-heading h2 em { color: var(--pk-sage); font-style: normal; }
+.faq-heading > p { color: #776b60; font-size: 15px; line-height: 1.8; }
+.faq-heading-line { width: 52px; height: 2px; margin: 22px auto 0; background: var(--pk-gold); }
+.faq-list { border-top: 1px solid var(--pk-border); }
+.faq-item { border-bottom: 1px solid var(--pk-border); }
+.faq-item summary { position: relative; padding: 21px 42px 21px 2px; cursor: pointer; list-style: none; color: var(--pk-forest); font-size: 16px; font-weight: 700; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; position: absolute; top: 50%; right: 5px; transform: translateY(-50%); color: var(--pk-gold); font-size: 24px; font-weight: 400; }
+.faq-item[open] summary::after { content: "−"; }
+.faq-answer { padding: 0 35px 20px 2px; }
+.faq-answer p, .faq-note { margin: 0; color: #776b60; font-size: 14px; line-height: 1.8; }
+.faq-note { margin-top: 25px; font-size: 12px; }
+
+/* =========================================================
+   SRI SRI WELLBEING — PREMIUM FOOTER
+========================================================= */
+
+:root {
+    --footer-bg: #35170d;
+    --footer-bg-deep: #241008;
+    --footer-card: rgba(255, 248, 239, 0.035);
+
+    --gold: #d9a936;
+    --gold-light: #e8c56a;
+    --cream: #fff8ef;
+    --muted: rgba(255, 248, 239, 0.68);
+    --border: rgba(217, 169, 54, 0.25);
+
+    --footer-max: 1240px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.wellness-footer {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    padding: 90px 6% 35px;
+
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(217, 169, 54, 0.09),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 5% 90%,
+            rgba(217, 169, 54, 0.06),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            var(--footer-bg),
+            var(--footer-bg-deep)
+        );
+
+    color: var(--cream);
+}
+
+
+/* =========================================================
+   DECORATIVE BACKGROUND
+========================================================= */
+
+.wellness-footer::before {
+    content: "";
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -230px;
+    top: -280px;
+
+    border: 1px solid rgba(217, 169, 54, 0.13);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.wellness-footer::after {
+    content: "";
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    left: -220px;
+    bottom: -250px;
+
+    border: 1px solid rgba(217, 169, 54, 0.1);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.footer-container {
+    position: relative;
+    z-index: 2;
+
+    max-width: var(--footer-max);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.footer-left {
+    padding-top: 8px;
+}
+
+
+.footer-label {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 25px;
+
+    color: var(--gold);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.footer-label::before {
+    content: "";
+
+    width: 32px;
+    height: 1px;
+
+    background: var(--gold);
+}
+
+
+.footer-left h2 {
+    margin: 0 0 18px;
+
+    color: var(--cream);
+
+    font-size: clamp(30px, 3vw, 48px);
+    font-weight: 400;
+
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+}
+
+
+.mission-text {
+    max-width: 520px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+    margin-top: 48px;
+}
+
+
+.contact-section h2 {
+    margin-bottom: 25px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    color: var(--gold);
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.contact-item {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    width: fit-content;
+
+    gap: 15px;
+
+    color: var(--cream);
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.contact-item:hover {
+    color: var(--gold-light);
+    transform: translateX(6px);
+}
+
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    color: var(--gold);
+
+    background: rgba(217, 169, 54, 0.04);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.contact-item:hover .contact-icon {
+    background: var(--gold);
+    border-color: var(--gold);
+
+    color: var(--footer-bg);
+
+    transform: rotate(-8deg);
+}
+
+
+/* =========================================================
+   MAP SIDE
+========================================================= */
+
+.footer-map {
+    position: relative;
+    z-index: 2;
+}
+
+
+.map-heading {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+
+    gap: 30px;
+
+    margin-bottom: 24px;
+}
+
+
+.map-heading h2 {
+    margin: 5px 0 0;
+
+    color: var(--cream);
+
+    font-size: clamp(30px, 3vw, 46px);
+    font-weight: 400;
+
+    letter-spacing: -1px;
+}
+
+
+.map-heading h2 em {
+    color: var(--gold);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+
+.map-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 145px;
+    padding: 12px 20px;
+
+    border: 1px solid rgba(217, 169, 54, 0.5);
+    border-radius: 100px;
+
+    color: var(--cream);
+
+    background: rgba(217, 169, 54, 0.04);
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.map-button i {
+    color: var(--gold);
+}
+
+
+.map-button:hover {
+    background: var(--gold);
+    color: var(--footer-bg);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 30px rgba(217, 169, 54, 0.2);
+}
+
+
+.map-button:hover i {
+    color: var(--footer-bg);
+}
+
+
+/* =========================================================
+   MAP WRAPPER
+========================================================= */
+
+.map-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 330px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 248, 239, 0.15);
+    border-radius: 4px;
+
+    background: #241008;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.2);
+
+    transition:
+        border-color 0.4s ease,
+        transform 0.4s ease;
+}
+
+
+.map-wrapper:hover {
+    border-color: rgba(217, 169, 54, 0.45);
+}
+
+
+/* =========================================================
+   GOOGLE MAP
+========================================================= */
+
+.map-wrapper iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+
+    filter:
+        saturate(0.85)
+        contrast(1.03);
+
+    transition: filter 0.5s ease;
+}
+
+
+.map-wrapper:hover iframe {
+    filter:
+        saturate(1)
+        contrast(1.03);
+}
+
+
+/* =========================================================
+   MAP OVERLAY
+========================================================= */
+
+.map-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 3;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(53, 23, 13, 0.08),
+            transparent 45%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MAP HEADING LABEL
+========================================================= */
+
+.map-heading::before {
+    content: "LOCATION";
+
+    position: absolute;
+
+    top: -28px;
+    right: 0;
+
+    color: var(--gold);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.footer-divider {
+    position: relative;
+    z-index: 2;
+
+    max-width: var(--footer-max);
+
+    height: 1px;
+
+    margin: 70px auto 30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(217, 169, 54, 0.35),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   BOTTOM FOOTER
+========================================================= */
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+
+    max-width: var(--footer-max);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.5fr 1fr;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.social-links {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.social-icon {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid rgba(217, 169, 54, 0.38);
+    border-radius: 50%;
+
+    color: var(--cream);
+
+    text-decoration: none;
+
+    overflow: hidden;
+
+    transition:
+        color 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+
+.social-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    transform: scale(0);
+
+    transition: transform 0.35s ease;
+}
+
+
+.social-icon i {
+    position: relative;
+    z-index: 2;
+
+    font-size: 15px;
+}
+
+
+.social-icon:hover {
+    color: var(--footer-bg);
+
+    border-color: var(--gold);
+
+    transform:
+        translateY(-5px)
+        rotate(-5deg);
+}
+
+
+.social-icon:hover::before {
+    transform: scale(1);
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.copyright {
+    text-align: center;
+
+    color: rgba(255, 248, 239, 0.55);
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+.copyright strong {
+    color: var(--cream);
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DESIGNED BY
+========================================================= */
+
+.footer-bottom::after {
+    content: ;
+
+    justify-self: end;
+
+    color: rgba(255, 248, 239, 0.42);
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.footer-left,
+.footer-map {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+.wellness-footer.footer-visible .footer-left,
+.wellness-footer.footer-visible .footer-map {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+.wellness-footer.footer-visible .footer-map {
+    transition-delay: 0.15s;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .wellness-footer {
+        padding: 75px 5% 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .mission-text {
+        max-width: 650px;
+    }
+
+    .map-wrapper {
+        height: 360px;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .copyright {
+        text-align: right;
+    }
+
+    .footer-bottom::after {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .wellness-footer {
+        padding: 65px 20px 28px;
+
+        border-radius: 0;
+    }
+
+
+    .footer-container {
+        gap: 50px;
+    }
+
+
+    .footer-left h2 {
+        font-size: 38px;
+    }
+
+
+    .mission-text {
+        font-size: 14px;
+
+        line-height: 1.8;
+    }
+
+
+    .contact-section {
+        margin-top: 38px;
+    }
+
+
+    .contact-item {
+        width: 100%;
+
+        font-size: 13px;
+    }
+
+
+    .map-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .map-heading h2 {
+        font-size: 38px;
+    }
+
+
+    .map-button {
+        width: 100%;
+    }
+
+
+    .map-wrapper {
+        height: 330px;
+
+        border-radius: 3px;
+    }
+
+
+    .footer-divider {
+        margin-top: 55px;
+    }
+
+
+    .footer-bottom {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+    }
+
+
+    .social-links {
+        justify-content: center;
+
+        order: 1;
+    }
+
+
+    .copyright {
+        order: 2;
+
+        text-align: center;
+
+        max-width: 340px;
+    }
+
+
+    .footer-bottom::after {
+        display: block;
+
+        order: 3;
+
+        justify-self: auto;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .wellness-footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .footer-left h2,
+    .map-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .contact-item span:last-child {
+        overflow-wrap: anywhere;
+    }
+
+
+    .map-wrapper {
+        height: 290px;
+    }
+
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   SRI SRI WELLBEING
+   AI CONCIERGE + WHATSAPP
+   FINAL MAIN CSS
+========================================================= */
+
+:root {
+    --ss-brown: #35180d;
+    --ss-brown-dark: #241008;
+    --ss-gold: #c69228;
+    --ss-gold-light: #dfbd70;
+
+    --ss-white: #ffffff;
+    --ss-cream: #f7f3ec;
+    --ss-paper: #faf9f6;
+
+    --ss-text: #35180d;
+    --ss-muted: #746861;
+
+    --ss-border: rgba(53, 24, 13, .12);
+}
+
+
+/* =========================================================
+   FLOATING ACTIONS
+========================================================= */
+
+#floatingActions {
+    position: fixed;
+
+    right: 24px;
+    bottom: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 11px;
+
+    z-index: 99990;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+#floatingActions .whatsapp-float {
+    position: relative;
+
+    width: 182px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 11px 5px 6px;
+
+    box-sizing: border-box;
+
+    border-radius: 999px;
+
+    background: #25D366;
+    color: #ffffff;
+
+    border: 1px solid #25D366;
+
+    text-decoration: none;
+
+    pointer-events: auto;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 30px rgba(37, 211, 102, .25);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+
+/* WhatsApp pulse */
+
+#floatingActions .whatsapp-pulse {
+    position: absolute;
+
+    left: 6px;
+    top: 5px;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.45);
+
+    pointer-events: none;
+
+    animation:
+        whatsappPulse 2.5s ease-out infinite;
+}
+
+
+@keyframes whatsappPulse {
+
+    0% {
+        transform: scale(.95);
+        opacity: .65;
+    }
+
+    70% {
+        transform: scale(1.55);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.55);
+        opacity: 0;
+    }
+}
+
+
+/* WhatsApp icon */
+
+#floatingActions .whatsapp-icon {
+    position: relative;
+    z-index: 2;
+
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.18);
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    box-sizing: border-box;
+
+    transition:
+        transform .35s ease,
+        background .35s ease;
+}
+
+
+#floatingActions .whatsapp-icon svg {
+    width: 22px;
+    height: 22px;
+
+    display: block;
+}
+
+
+#floatingActions .whatsapp-icon svg path {
+    fill: #ffffff;
+}
+
+
+/* WhatsApp text */
+
+#floatingActions .whatsapp-label {
+    margin-left: 11px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: .04em;
+
+    white-space: nowrap;
+}
+
+
+/* WhatsApp arrow */
+
+#floatingActions .whatsapp-arrow {
+    margin-left: auto;
+
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    transition: transform .3s ease;
+}
+
+
+/* WhatsApp hover */
+
+#floatingActions .whatsapp-float:hover {
+    transform: translateX(-5px);
+
+    box-shadow:
+        0 17px 38px rgba(37,211,102,.34);
+}
+
+
+#floatingActions .whatsapp-float:hover .whatsapp-icon {
+    background: rgba(255,255,255,.28);
+
+    transform: scale(1.06);
+}
+
+
+#floatingActions .whatsapp-float:hover .whatsapp-arrow {
+    transform: translate(3px,-2px);
+}
+
+
+/* =========================================================
+   AI OPEN BUTTON
+========================================================= */
+
+#floatingActions .ai-open {
+    position: relative;
+
+    width: 182px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 11px 5px 6px;
+
+    box-sizing: border-box;
+
+    border-radius: 999px;
+
+    background: var(--ss-brown);
+
+    color: #ffffff;
+
+    border: 1px solid var(--ss-brown);
+
+    pointer-events: auto;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 30px rgba(53,24,13,.28);
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+
+/* AI icon */
+
+#floatingActions .ai-open-icon {
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--ss-gold);
+
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    transition:
+        transform .35s ease,
+        background .35s ease;
+}
+
+
+/* AI text */
+
+#floatingActions .ai-open-text {
+    margin-left: 11px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: .045em;
+
+    white-space: nowrap;
+}
+
+
+/* AI arrow */
+
+#floatingActions .ai-open-arrow {
+    margin-left: auto;
+
+    color: var(--ss-gold);
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+}
+
+
+/* AI hover */
+
+#floatingActions .ai-open:hover {
+    transform: translateX(-5px);
+
+    background: var(--ss-brown-dark);
+
+    border-color: var(--ss-brown-dark);
+
+    box-shadow:
+        0 17px 38px rgba(53,24,13,.36);
+}
+
+
+#floatingActions .ai-open:hover .ai-open-icon {
+    background: var(--ss-gold-light);
+
+    transform: scale(1.06) rotate(6deg);
+}
+
+
+#floatingActions .ai-open:hover .ai-open-arrow {
+    color: var(--ss-gold-light);
+
+    transform: translate(3px,-2px);
+}
+
+
+/* Active */
+
+#floatingActions .ai-open.active,
+#floatingActions .ai-open[aria-expanded="true"] {
+    background: var(--ss-brown-dark);
+
+    border-color: var(--ss-brown-dark);
+}
+
+
+/* =========================================================
+   AI CONCIERGE
+========================================================= */
+
+#aiConcierge {
+    font-family:
+        Inter,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+}
+
+
+/* =========================================================
+   NO DARK OVERLAY
+========================================================= */
+
+#aiConcierge .ai-overlay {
+    display: none !important;
+
+    background: transparent !important;
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    pointer-events: none !important;
+}
+
+
+/* =========================================================
+   AI PANEL
+========================================================= */
+
+#aiConcierge .ai-panel {
+    position: fixed;
+
+    top: 50%;
+    right: 28px;
+
+    width: min(470px, calc(100vw - 56px));
+
+    max-height: calc(100vh - 56px);
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(53,24,13,.15);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 85px rgba(53,24,13,.27);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+        translateY(calc(-50% + 28px))
+        scale(.96);
+
+    z-index: 99999;
+
+    transition:
+        opacity .35s ease,
+        visibility .35s ease,
+        transform .35s cubic-bezier(.2,.7,.2,1);
+}
+
+
+#aiConcierge .ai-panel.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(-50%)
+        scale(1);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+#aiConcierge .ai-header {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 58px 1fr 42px;
+
+    gap: 14px;
+
+    padding: 24px;
+
+    flex-shrink: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ss-brown-dark),
+            var(--ss-brown)
+        );
+
+    color: #ffffff;
+}
+
+
+/* Logo */
+
+#aiConcierge .ai-robot {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 18px rgba(0,0,0,.18);
+}
+
+
+#aiConcierge .ai-robot img {
+    width: 76%;
+    height: 76%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* Header */
+
+#aiConcierge .ai-label {
+    margin-bottom: 5px;
+
+    color: var(--ss-gold-light);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: .18em;
+}
+
+
+#aiConcierge .ai-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+
+#aiConcierge .ai-header p {
+    margin: 6px 0 0;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* Close */
+
+#aiConcierge .ai-close {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.18);
+
+    background: rgba(255,255,255,.07);
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+
+#aiConcierge .ai-close:hover {
+    background: var(--ss-gold);
+
+    transform: rotate(90deg);
+}
+
+
+/* Badges */
+
+#aiConcierge .ai-badges {
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+#aiConcierge .ai-badges span {
+    padding: 6px 9px;
+
+    border-radius: 999px;
+
+    border: 1px solid rgba(255,255,255,.14);
+
+    background: rgba(255,255,255,.06);
+
+    color: rgba(255,255,255,.82);
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+#aiConcierge .ai-nav {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 5px;
+
+    padding: 8px;
+
+    background: var(--ss-cream);
+
+    border-bottom: 1px solid var(--ss-border);
+
+    flex-shrink: 0;
+}
+
+
+#aiConcierge .ai-nav-btn {
+    min-height: 42px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: var(--ss-muted);
+
+    font-family: inherit;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+}
+
+
+#aiConcierge .ai-nav-btn:hover {
+    color: var(--ss-brown);
+
+    background: #ffffff;
+}
+
+
+#aiConcierge .ai-nav-btn.active {
+    background: var(--ss-brown);
+
+    color: #ffffff;
+
+    box-shadow:
+        0 6px 15px rgba(53,24,13,.16);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+#aiConcierge .ai-content {
+    flex: 1;
+
+    min-height: 0;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    background: var(--ss-paper);
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+#aiConcierge .ai-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+#aiConcierge .ai-content::-webkit-scrollbar-thumb {
+    background: rgba(53,24,13,.18);
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   PAGE VISIBILITY
+========================================================= */
+
+#aiConcierge .ai-page {
+    display: none !important;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+}
+
+
+#aiConcierge .ai-page.active {
+    display: block !important;
+
+    animation:
+        aiPageIn .3s ease both;
+}
+
+
+@keyframes aiPageIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(7px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   ASK
+========================================================= */
+
+#aiConcierge .ai-message {
+    display: block;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--ss-border);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 24px rgba(53,24,13,.05);
+}
+
+
+#aiConcierge .ai-message-name {
+    margin-bottom: 8px;
+
+    color: var(--ss-gold);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: .18em;
+}
+
+
+#aiConcierge .ai-message p {
+    margin: 0;
+
+    color: var(--ss-text);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ASK ACTIONS
+========================================================= */
+
+#aiConcierge .ai-actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+
+    margin-top: 20px;
+}
+
+
+#aiConcierge .ai-actions button {
+    min-height: 46px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    border: 1px solid var(--ss-brown);
+
+    background: var(--ss-brown);
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+#aiConcierge .ai-actions button:hover {
+    background: var(--ss-gold);
+
+    border-color: var(--ss-gold);
+
+    transform: translateY(-2px);
+}
+
+
+#aiConcierge .ai-actions button:last-child {
+    background: #ffffff;
+
+    color: var(--ss-brown);
+}
+
+
+#aiConcierge .ai-actions button:last-child:hover {
+    background: var(--ss-brown);
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   HELP
+========================================================= */
+
+#aiConcierge .ai-help-card {
+    display: block !important;
+
+    margin-top: 12px;
+
+    padding: 17px;
+
+    background: var(--ss-cream);
+
+    border: 1px solid rgba(53,24,13,.09);
+
+    border-radius: 16px;
+}
+
+
+#aiConcierge .ai-help-card strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--ss-brown);
+
+    font-size: 12px;
+}
+
+
+#aiConcierge .ai-help-card p {
+    display: block;
+
+    margin: 0;
+
+    color: var(--ss-muted);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   THERAPIES
+========================================================= */
+
+#aiConcierge .ai-card {
+    display: block;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--ss-border);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 24px rgba(53,24,13,.05);
+}
+
+
+#aiConcierge .ai-card-label {
+    margin-bottom: 7px;
+
+    color: var(--ss-gold);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: .15em;
+}
+
+
+#aiConcierge .ai-card h3 {
+    margin: 0;
+
+    color: var(--ss-brown);
+
+    font-size: 22px;
+
+    line-height: 1.25;
+}
+
+
+#aiConcierge .ai-description {
+    margin: 7px 0 17px;
+
+    color: var(--ss-muted);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* Therapy */
+
+#aiConcierge .therapy-item {
+    width: 100%;
+
+    min-height: 70px;
+
+    display: grid !important;
+
+    grid-template-columns: 42px 1fr 22px;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin-top: 8px;
+
+    padding: 9px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(53,24,13,.10);
+
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    color: var(--ss-brown);
+
+    text-align: left;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+#aiConcierge .therapy-item:hover {
+    transform: translateX(4px);
+
+    background: var(--ss-cream);
+
+    border-color: rgba(198,146,40,.55);
+
+    box-shadow:
+        0 8px 20px rgba(53,24,13,.07);
+}
+
+
+#aiConcierge .therapy-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--ss-brown);
+
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+
+#aiConcierge .therapy-item:hover .therapy-icon {
+    background: var(--ss-gold);
+
+    transform: scale(1.05);
+}
+
+
+#aiConcierge .therapy-info {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+#aiConcierge .therapy-info strong {
+    color: var(--ss-brown);
+
+    font-size: 12px;
+
+    line-height: 1.35;
+}
+
+
+#aiConcierge .therapy-info small {
+    color: var(--ss-muted);
+
+    font-size: 10px;
+
+    line-height: 1.4;
+}
+
+
+#aiConcierge .therapy-arrow {
+    color: var(--ss-gold);
+
+    font-size: 18px;
+
+    transition: transform .3s ease;
+}
+
+
+#aiConcierge .therapy-item:hover .therapy-arrow {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   SELECTED THERAPY
+========================================================= */
+
+#aiConcierge .selected-therapy {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-bottom: 17px;
+
+    padding: 13px 14px;
+
+    border-left: 3px solid var(--ss-gold);
+
+    border-radius: 0 10px 10px 0;
+
+    background: var(--ss-cream);
+}
+
+
+#aiConcierge .selected-therapy span {
+    color: var(--ss-muted);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .1em;
+}
+
+
+#aiConcierge .selected-therapy strong {
+    color: var(--ss-brown);
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BOOKING FORM
+========================================================= */
+
+#aiConcierge #bookingForm {
+    display: block !important;
+
+    width: 100%;
+}
+
+
+#aiConcierge .ai-form-group {
+    display: block !important;
+
+    margin-bottom: 13px;
+}
+
+
+#aiConcierge .ai-form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--ss-brown);
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+#aiConcierge .ai-form-group input,
+#aiConcierge .ai-form-group select,
+#aiConcierge .ai-form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(53,24,13,.15);
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: var(--ss-brown);
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    outline: none;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+#aiConcierge .ai-form-group input,
+#aiConcierge .ai-form-group select {
+    height: 43px;
+
+    padding: 0 12px;
+}
+
+
+#aiConcierge .ai-form-group textarea {
+    min-height: 80px;
+
+    padding: 11px 12px;
+
+    resize: vertical;
+}
+
+
+#aiConcierge .ai-form-group input:focus,
+#aiConcierge .ai-form-group select:focus,
+#aiConcierge .ai-form-group textarea:focus {
+    border-color: var(--ss-gold);
+
+    box-shadow:
+        0 0 0 3px rgba(198,146,40,.10);
+}
+
+
+/* =========================================================
+   CONSENT
+========================================================= */
+
+#aiConcierge .ai-consent {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin: 5px 0 15px;
+
+    cursor: pointer;
+}
+
+
+#aiConcierge .ai-consent input {
+    width: 15px;
+    height: 15px;
+
+    margin: 1px 0 0;
+
+    flex: 0 0 15px;
+
+    accent-color: var(--ss-brown);
+}
+
+
+#aiConcierge .ai-consent span {
+    color: var(--ss-muted);
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+#aiConcierge .ai-submit {
+    width: 100%;
+
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+
+    border: 1px solid var(--ss-brown);
+
+    border-radius: 11px;
+
+    background: var(--ss-brown);
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: .08em;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+
+#aiConcierge .ai-submit:hover {
+    background: var(--ss-gold);
+
+    border-color: var(--ss-gold);
+
+    transform: translateY(-2px);
+}
+
+
+#aiConcierge .ai-submit:disabled {
+    cursor: default;
+
+    opacity: .8;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+#aiConcierge .booking-success {
+    display: none;
+
+    margin-top: 14px;
+
+    padding: 13px;
+
+    border-radius: 11px;
+
+    background: var(--ss-cream);
+
+    border: 1px solid rgba(198,146,40,.35);
+
+    color: var(--ss-brown);
+
+    font-size: 11px;
+
+    line-height: 1.55;
+}
+
+
+#aiConcierge .booking-success.show {
+    display: block;
+}
+
+
+/* =========================================================
+   FOOTER QUESTION BAR
+========================================================= */
+
+#aiConcierge .ai-footer {
+    display: flex;
+
+    gap: 8px;
+
+    padding: 12px;
+
+    flex-shrink: 0;
+
+    background: #ffffff;
+
+    border-top: 1px solid var(--ss-border);
+}
+
+
+#aiConcierge .ai-footer input {
+    min-width: 0;
+
+    flex: 1;
+
+    height: 42px;
+
+    padding: 0 13px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(53,24,13,.14);
+
+    border-radius: 10px;
+
+    background: var(--ss-paper);
+
+    color: var(--ss-brown);
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    outline: none;
+}
+
+
+#aiConcierge .ai-footer input:focus {
+    border-color: var(--ss-gold);
+
+    box-shadow:
+        0 0 0 3px rgba(198,146,40,.10);
+}
+
+
+#aiConcierge .ai-footer button {
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: var(--ss-brown);
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+
+#aiConcierge .ai-footer button:hover {
+    background: var(--ss-gold);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LIVE AI RESPONSE
+========================================================= */
+
+#aiConcierge .ai-live-response {
+    display: block;
+
+    margin-top: 12px;
+
+    padding: 17px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--ss-border);
+
+    border-radius: 16px;
+
+    animation:
+        aiPageIn .3s ease both;
+}
+
+
+#aiConcierge .ai-live-response p {
+    margin: 0;
+
+    color: var(--ss-brown);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+#floatingActions button:focus-visible,
+#floatingActions a:focus-visible,
+#aiConcierge button:focus-visible,
+#aiConcierge input:focus-visible,
+#aiConcierge select:focus-visible,
+#aiConcierge textarea:focus-visible {
+    outline: 2px solid var(--ss-gold);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #floatingActions .whatsapp-pulse {
+        animation: none;
+    }
+
+    #floatingActions *,
+    #aiConcierge * {
+        transition: none !important;
+        animation: none !important;
+    }
+
+}

@@ -1,0 +1,4009 @@
+
+/* =========================================================
+   SRI SRI WELLBEING
+   FINAL HEADER RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================
+   SRI SRI WELLBEING
+   RESPONSIVE HEADER CSS
+========================================= */
+
+/* =========================================
+   LAPTOP / SMALL DESKTOP
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .header-container {
+        padding: 0 4%;
+    }
+
+    .site-header .logo img {
+        max-width: 100px;
+        max-height: 60px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .header-call-button {
+        padding: 0 15px;
+    }
+
+    .contact-button {
+        min-width: 95px;
+        padding: 0 18px;
+    }
+
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .header-container {
+        height: 76px;
+        padding: 0 4%;
+    }
+
+    .site-header .logo img {
+        max-width: 95px;
+        max-height: 58px;
+    }
+
+    .header-actions {
+        gap: 9px;
+    }
+
+    .header-call-button {
+        height: 42px;
+        padding: 0 13px;
+        font-size: 10px;
+    }
+
+    .contact-button {
+        height: 42px;
+        min-width: 85px;
+        padding: 0 15px;
+        font-size: 10px;
+    }
+
+    .menu-toggle {
+        width: 43px;
+        height: 43px;
+    }
+
+    .main-menu {
+        width: min(450px, 88vw);
+    }
+
+    .menu-inner {
+        padding: 100px 40px 30px;
+    }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .header-container {
+        height: 72px;
+        padding: 0 4%;
+    }
+
+    .site-header .logo img {
+        max-width: 82px;
+        max-height: 54px;
+    }
+
+    .header-actions {
+        gap: 7px;
+    }
+
+    .header-call-button {
+        height: 38px;
+        padding: 0 10px;
+        gap: 6px;
+
+        font-size: 9px;
+        letter-spacing: 0;
+    }
+
+    .header-call-button .call-icon {
+        font-size: 12px;
+    }
+
+    .contact-button {
+        height: 38px;
+        min-width: 70px;
+        padding: 0 11px;
+
+        font-size: 9px;
+        letter-spacing: 0.04em;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+        gap: 4px;
+    }
+
+    .menu-toggle span {
+        width: 17px;
+    }
+
+    .main-menu {
+        width: 88vw;
+        max-width: 420px;
+    }
+
+    .menu-inner {
+        padding: 90px 30px 25px;
+    }
+
+    .menu-top {
+        padding-bottom: 20px;
+    }
+
+    .menu-link {
+        min-height: 68px;
+        grid-template-columns: 38px 1fr 25px;
+    }
+
+    .menu-link strong {
+        font-size: 24px;
+    }
+
+    .menu-link i {
+        font-size: 16px;
+    }
+
+    .menu-bottom {
+        padding-top: 20px;
+    }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .header-container {
+        height: 66px;
+        padding: 0 12px;
+    }
+
+    .site-header .logo img {
+        max-width: 68px;
+        max-height: 48px;
+    }
+
+    .header-actions {
+        gap: 5px;
+    }
+
+    .header-call-button {
+        height: 35px;
+        padding: 0 8px;
+        gap: 5px;
+
+        font-size: 8px;
+    }
+
+    .header-call-button .call-icon {
+        font-size: 10px;
+    }
+
+    .contact-button {
+        height: 35px;
+        min-width: 58px;
+        padding: 0 8px;
+
+        font-size: 8px;
+    }
+
+    .menu-toggle {
+        width: 36px;
+        height: 36px;
+        gap: 4px;
+    }
+
+    .menu-toggle span {
+        width: 15px;
+    }
+
+    .site-header.menu-open .menu-toggle span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .site-header.menu-open .menu-toggle span:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .main-menu {
+        width: 90vw;
+    }
+
+    .menu-inner {
+        padding: 80px 22px 22px;
+    }
+
+    .menu-label {
+        font-size: 8px;
+    }
+
+    .menu-close {
+        width: 35px;
+        height: 35px;
+        font-size: 21px;
+    }
+
+    .menu-links {
+        padding-top: 18px;
+    }
+
+    .menu-link {
+        min-height: 62px;
+        grid-template-columns: 32px 1fr 22px;
+    }
+
+    .menu-link strong {
+        font-size: 22px;
+    }
+
+    .menu-link span {
+        font-size: 8px;
+    }
+
+    .menu-link i {
+        font-size: 15px;
+    }
+
+    .menu-bottom {
+        gap: 10px;
+    }
+
+    .menu-bottom span {
+        font-size: 7px;
+        letter-spacing: 0.08em;
+    }
+
+}
+
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+    .header-container {
+        padding: 0 9px;
+    }
+
+    .site-header .logo img {
+        max-width: 58px;
+    }
+
+    .header-actions {
+        gap: 4px;
+    }
+
+    .header-call-button {
+        padding: 0 6px;
+        font-size: 7.5px;
+    }
+
+    .contact-button {
+        min-width: 52px;
+        padding: 0 6px;
+        font-size: 7.5px;
+    }
+
+    .menu-toggle {
+        width: 33px;
+        height: 33px;
+    }
+
+    .menu-toggle span {
+        width: 14px;
+    }
+
+    .menu-inner {
+        padding: 75px 18px 20px;
+    }
+
+    .menu-link strong {
+        font-size: 20px;
+    }
+
+}
+
+/* =========================================
+   LANDSCAPE MOBILE
+========================================= */
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+    .main-menu {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .menu-inner {
+        padding-top: 75px;
+    }
+
+    .menu-link {
+        min-height: 55px;
+    }
+
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .site-header,
+    .site-header .logo img,
+    .header-call-button,
+    .contact-button,
+    .menu-toggle,
+    .menu-toggle span,
+    .menu-overlay,
+    .main-menu,
+    .menu-link,
+    .menu-link i,
+    .menu-close {
+        transition: none !important;
+    }
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   SRI SRI WELLBEING
+   HERO — FINAL RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   TABLET — 1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 650px;
+        overflow: hidden;
+        background: #30160b;
+    }
+
+    /* VIDEO */
+
+    .hero-video-container {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #30160b;
+        z-index: 1;
+    }
+
+    .hero-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+
+    /* OVERLAY */
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        pointer-events: none;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(28, 12, 5, 0.58) 0%,
+                rgba(28, 12, 5, 0.30) 45%,
+                rgba(28, 12, 5, 0.18) 100%
+            );
+    }
+
+    /* CONTAINER */
+
+    .hero-container {
+        position: relative;
+        z-index: 3;
+
+        width: 88%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /* CONTENT */
+
+    .hero-content {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .hero h1 {
+        font-size: clamp(50px, 8vw, 78px);
+    }
+
+    .hero h2 {
+        font-size: clamp(27px, 4vw, 38px);
+    }
+
+    .hero-description {
+        max-width: 580px;
+    }
+
+    /* SCROLL */
+
+    .scroll-down {
+        right: 20px;
+        bottom: 70px;
+        z-index: 5;
+    }
+
+    /* SOUND */
+
+    .video-control {
+        left: 4%;
+        bottom: 55px;
+        z-index: 10;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100svh;
+        min-height: 680px;
+        overflow: hidden;
+        background: #30160b;
+    }
+
+
+    /* -----------------------------------------------------
+       VIDEO
+    ----------------------------------------------------- */
+
+    .hero-video-container {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+
+        background: #30160b;
+
+        z-index: 1;
+    }
+
+    .hero-video {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+
+        /*
+           Slight crop.
+           Prevents unwanted dark edge at bottom.
+        */
+        transform:
+            translate(-50%, -50%)
+            scale(1.07);
+
+        display: block;
+    }
+
+
+    /* -----------------------------------------------------
+       BRIGHTER OVERLAY
+    ----------------------------------------------------- */
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+
+        z-index: 2;
+
+        pointer-events: none;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(28, 12, 5, 0.28) 0%,
+                rgba(28, 12, 5, 0.34) 55%,
+                rgba(28, 12, 5, 0.45) 100%
+            );
+    }
+
+
+    /* -----------------------------------------------------
+       CONTAINER
+    ----------------------------------------------------- */
+
+    .hero-container {
+        position: relative;
+
+        width: 90%;
+        height: 100%;
+
+        margin: 0 auto;
+
+        z-index: 3;
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* -----------------------------------------------------
+       CONTENT
+    ----------------------------------------------------- */
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+
+        padding-top: 30px;
+    }
+
+
+    /* -----------------------------------------------------
+       LABEL
+    ----------------------------------------------------- */
+
+    .hero-label {
+        margin-bottom: 18px;
+
+        font-size: 9px;
+        letter-spacing: 0.16em;
+    }
+
+    .hero-label span {
+        width: 25px;
+    }
+
+
+    /* -----------------------------------------------------
+       TITLE
+    ----------------------------------------------------- */
+
+    .hero h1 {
+        margin-bottom: 22px;
+
+        font-size: clamp(48px, 13vw, 68px);
+
+        line-height: 0.92;
+    }
+
+
+    /* -----------------------------------------------------
+       SUBTITLE
+    ----------------------------------------------------- */
+
+    .hero h2 {
+        margin-bottom: 18px;
+
+        font-size: clamp(25px, 7vw, 34px);
+
+        line-height: 1.05;
+    }
+
+
+    /* -----------------------------------------------------
+       DESCRIPTION
+    ----------------------------------------------------- */
+
+    .hero-description {
+        max-width: 100%;
+
+        margin-bottom: 26px;
+
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------------------
+       BUTTONS
+    ----------------------------------------------------- */
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+
+        margin-bottom: 24px;
+    }
+
+    .hero-button {
+        width: 100%;
+
+        min-height: 52px;
+
+        padding: 0 22px;
+
+        justify-content: space-between;
+
+        gap: 15px;
+    }
+
+
+    /* -----------------------------------------------------
+       TRUST POINTS
+    ----------------------------------------------------- */
+
+    .trust-points {
+        gap: 10px 15px;
+    }
+
+    .trust-points div {
+        font-size: 10px;
+    }
+
+
+    /* -----------------------------------------------------
+       SCROLL
+    ----------------------------------------------------- */
+
+    .scroll-down {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       SOUND CONTROL
+    ----------------------------------------------------- */
+
+    .video-control {
+        position: absolute;
+
+        left: 5%;
+        bottom: 22px;
+
+        z-index: 10;
+
+        padding: 7px 12px;
+
+        font-size: 8px;
+
+        margin: 0;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        height: 100svh;
+        min-height: 650px;
+
+        overflow: hidden;
+
+        background: #30160b;
+    }
+
+
+    /* VIDEO */
+
+    .hero-video-container {
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+    }
+
+    .hero-video {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.07);
+    }
+
+
+    /* OVERLAY */
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(28, 12, 5, 0.25) 0%,
+                rgba(28, 12, 5, 0.32) 55%,
+                rgba(28, 12, 5, 0.43) 100%
+            );
+    }
+
+
+    /* CONTAINER */
+
+    .hero-container {
+        width: 88%;
+        height: 100%;
+    }
+
+
+    /* CONTENT */
+
+    .hero-content {
+        padding-top: 20px;
+    }
+
+
+    /* TITLE */
+
+    .hero h1 {
+        font-size: 50px;
+        line-height: 0.9;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* SUBTITLE */
+
+    .hero h2 {
+        font-size: 27px;
+        line-height: 1.05;
+
+        margin-bottom: 18px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .hero-description {
+        font-size: 12px;
+        line-height: 1.65;
+
+        margin-bottom: 24px;
+    }
+
+
+    /* BUTTON */
+
+    .hero-button {
+        min-height: 50px;
+        font-size: 12px;
+    }
+
+    .hero-button span:first-child {
+        font-size: 12px;
+    }
+
+    .hero-button .button-arrow {
+        font-size: 18px;
+    }
+
+
+    /* TRUST */
+
+    .trust-points {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 7px;
+    }
+
+
+    /* SOUND */
+
+    .video-control {
+        left: 5%;
+        bottom: 18px;
+
+        padding: 7px 12px;
+
+        font-size: 8px;
+
+        z-index: 10;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE — 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .hero-video {
+        transform:
+            translate(-50%, -50%)
+            scale(1.09);
+    }
+
+    .hero-container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+        line-height: 0.9;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero-description {
+        font-size: 11px;
+    }
+
+    .hero-button {
+        min-height: 48px;
+    }
+
+    .video-control {
+        left: 5%;
+        bottom: 16px;
+
+        padding: 6px 11px;
+
+        font-size: 8px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE SAFE AREA
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .video-control {
+        bottom:
+            max(
+                16px,
+                env(safe-area-inset-bottom)
+            );
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-video {
+        transform:
+            translate(-50%, -50%)
+            scale(1.03);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .approach-section {
+        padding: 100px 0 110px;
+    }
+
+    .approach-container {
+        width: min(920px, 90%);
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(360px, 0.8fr);
+
+        gap: 55px;
+    }
+
+    .approach-visual {
+        min-height: 560px;
+    }
+
+    .approach-image-frame {
+        max-width: 450px;
+    }
+
+    .approach-card {
+        left: -28px;
+        bottom: 15px;
+
+        width: 190px;
+        min-height: 235px;
+
+        padding: 24px 23px;
+    }
+
+    .card-content h3 {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .approach-section {
+        min-height: auto;
+        padding: 80px 0 90px;
+    }
+
+    .approach-container {
+        width: min(92%, 600px);
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 60px;
+    }
+
+    .approach-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .approach-title {
+        font-size: clamp(48px, 12vw, 68px);
+    }
+
+    .approach-intro {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .approach-description {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .approach-visual {
+        width: 100%;
+        min-height: auto;
+
+        display: block;
+
+        padding-bottom: 70px;
+    }
+
+    .approach-image-frame {
+        width: 88%;
+        max-width: 430px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        aspect-ratio: 0.76 / 1;
+    }
+
+    .approach-card {
+        left: 2%;
+        bottom: 0;
+
+        width: 185px;
+        min-height: 225px;
+
+        padding: 23px 22px;
+    }
+
+    .card-number {
+        width: 37px;
+        height: 37px;
+    }
+
+    .card-content h3 {
+        font-size: 21px;
+    }
+
+    .card-content p {
+        font-size: 11px;
+        line-height: 1.65;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .approach-section {
+        padding: 70px 0 80px;
+    }
+
+    .approach-container {
+        width: 90%;
+        gap: 50px;
+    }
+
+    .approach-label {
+        font-size: 9px;
+        gap: 10px;
+    }
+
+    .approach-label span {
+        width: 25px;
+    }
+
+    .approach-title {
+        font-size: clamp(42px, 13vw, 58px);
+    }
+
+    .approach-intro {
+        font-size: 14px;
+    }
+
+    .approach-description {
+        font-size: 12px;
+    }
+
+    .approach-button {
+        min-width: 210px;
+        margin-top: 28px;
+    }
+
+    .approach-visual {
+        padding-bottom: 60px;
+    }
+
+    .approach-image-frame {
+        width: 92%;
+    }
+
+    /*
+       Smaller card for mobile
+    */
+    .approach-card {
+        left: 0;
+        bottom: 0;
+
+        width: 165px;
+        min-height: 205px;
+
+        padding: 20px 19px;
+    }
+
+    .card-number {
+        width: 34px;
+        height: 34px;
+
+        font-size: 9px;
+    }
+
+    .card-content h3 {
+        font-size: 19px;
+        margin-bottom: 8px;
+    }
+
+    .card-content p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .approach-card {
+        width: 150px;
+        min-height: 190px;
+
+        padding: 18px 17px;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+    }
+
+    .card-content p {
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE CSS
+   THE CONTINUUM OF TRUE WELLBEING
+========================================================= */
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .wellbeing-continuum {
+        padding: 105px 0 75px;
+    }
+
+    .continuum-header,
+    .continuum-wrapper,
+    .continuum-progress {
+        width: 90%;
+    }
+
+    .continuum-header {
+        gap: 30px;
+        margin-bottom: 45px;
+    }
+
+    .continuum-heading-wrap h2 {
+        font-size: clamp(40px, 5.5vw, 62px);
+    }
+
+    .continuum-card {
+        min-height: 540px;
+    }
+
+    .continuum-image {
+        height: 280px;
+    }
+
+    .continuum-content {
+        padding: 30px 30px 25px;
+    }
+
+    .continuum-content h3 {
+        font-size: 34px;
+    }
+
+    .continuum-content p {
+        font-size: 12.5px;
+        line-height: 1.75;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .wellbeing-continuum {
+        padding: 90px 0 70px;
+    }
+
+    .continuum-header {
+        width: 90%;
+        align-items: flex-end;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .continuum-heading-wrap h2 {
+        font-size: clamp(38px, 6vw, 55px);
+        line-height: 1;
+    }
+
+    .continuum-eyebrow {
+        margin-bottom: 14px;
+        font-size: 9px;
+        letter-spacing: 0.24em;
+    }
+
+    .header-line {
+        width: 55px;
+        margin-top: 22px;
+    }
+
+    .continuum-controls {
+        gap: 8px;
+    }
+
+    .continuum-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+
+    /* -----------------------------------------
+       SLIDER
+    ----------------------------------------- */
+
+    .continuum-wrapper {
+        width: 90%;
+    }
+
+    .continuum-track {
+        gap: 20px;
+    }
+
+    .continuum-card {
+        flex: 0 0 calc((100% - 20px) / 2);
+        min-height: 520px;
+    }
+
+
+    /* -----------------------------------------
+       IMAGE
+    ----------------------------------------- */
+
+    .continuum-image {
+        height: 260px;
+    }
+
+    .image-stage {
+        left: 20px;
+        bottom: 18px;
+        font-size: 48px;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .continuum-content {
+        padding: 27px 27px 24px;
+    }
+
+    .continuum-top {
+        margin-bottom: 20px;
+    }
+
+    .continuum-number {
+        width: 38px;
+        height: 38px;
+        font-size: 10px;
+    }
+
+    .continuum-label {
+        gap: 7px;
+    }
+
+    .continuum-label span {
+        width: 20px;
+    }
+
+    .continuum-label strong {
+        font-size: 9px;
+        letter-spacing: 0.18em;
+    }
+
+    .continuum-content h3 {
+        font-size: 31px;
+    }
+
+    .continuum-content p {
+        margin-top: 18px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .continuum-card-footer {
+        padding-top: 20px;
+    }
+
+
+    /* -----------------------------------------
+       PROGRESS
+    ----------------------------------------- */
+
+    .continuum-progress {
+        width: 90%;
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .progress-current {
+        font-size: 23px;
+    }
+
+    .progress-label {
+        font-size: 8px;
+        min-width: 70px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .wellbeing-continuum {
+        padding: 75px 0 55px;
+    }
+
+
+    /* -----------------------------------------
+       HEADER
+    ----------------------------------------- */
+
+    .continuum-header {
+        width: 88%;
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    .continuum-eyebrow {
+        margin-bottom: 12px;
+        font-size: 8px;
+        letter-spacing: 0.22em;
+    }
+
+    .continuum-heading-wrap h2 {
+        max-width: 100%;
+        font-size: clamp(36px, 10vw, 50px);
+        line-height: 1;
+        letter-spacing: -0.04em;
+    }
+
+    .header-line {
+        width: 45px;
+        height: 1px;
+        margin-top: 18px;
+    }
+
+
+    /* -----------------------------------------
+       CONTROLS
+    ----------------------------------------- */
+
+    .continuum-controls {
+        margin-top: 25px;
+        gap: 8px;
+    }
+
+    .continuum-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+
+    /* -----------------------------------------
+       SLIDER
+    ----------------------------------------- */
+
+    .continuum-wrapper {
+        width: 88%;
+        cursor: grab;
+        overflow: hidden;
+        touch-action: pan-y;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .continuum-wrapper:active {
+        cursor: grabbing;
+    }
+
+    .continuum-track {
+        gap: 16px;
+        transition: none;
+        will-change: transform;
+    }
+
+
+    /* -----------------------------------------
+       ONE CARD ON MOBILE
+    ----------------------------------------- */
+
+    .continuum-card {
+        flex: 0 0 100%;
+        min-height: 510px;
+        border-radius: 4px;
+    }
+
+
+    /* -----------------------------------------
+       IMAGE
+    ----------------------------------------- */
+
+    .continuum-image {
+        height: 270px;
+    }
+
+    .continuum-image img {
+        object-position: center;
+    }
+
+    .image-stage {
+        left: 18px;
+        bottom: 16px;
+        font-size: 44px;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .continuum-content {
+        padding: 24px 23px 21px;
+    }
+
+    .continuum-top {
+        margin-bottom: 18px;
+    }
+
+    .continuum-number {
+        width: 36px;
+        height: 36px;
+        font-size: 9px;
+    }
+
+    .continuum-label {
+        gap: 6px;
+    }
+
+    .continuum-label span {
+        width: 18px;
+    }
+
+    .continuum-label strong {
+        font-size: 8px;
+        letter-spacing: 0.16em;
+    }
+
+    .continuum-content h3 {
+        font-size: 29px;
+        line-height: 1.04;
+    }
+
+    .continuum-content p {
+        margin-top: 16px;
+        font-size: 11.5px;
+        line-height: 1.7;
+    }
+
+    .continuum-card-footer {
+        padding-top: 18px;
+    }
+
+    .card-arrow {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+
+    /* -----------------------------------------
+       PROGRESS
+    ----------------------------------------- */
+
+    .continuum-progress {
+        width: 88%;
+        margin-top: 25px;
+        gap: 12px;
+    }
+
+    .progress-number {
+        min-width: 55px;
+        gap: 3px;
+    }
+
+    .progress-current {
+        font-size: 21px;
+    }
+
+    .progress-slash,
+    .progress-total {
+        font-size: 9px;
+    }
+
+    .progress-label {
+        min-width: 60px;
+        font-size: 7px;
+        letter-spacing: 0.16em;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .wellbeing-continuum {
+        padding: 65px 0 45px;
+    }
+
+    .continuum-header {
+        width: 90%;
+        margin-bottom: 28px;
+    }
+
+    .continuum-heading-wrap h2 {
+        font-size: clamp(32px, 11vw, 43px);
+    }
+
+    .continuum-eyebrow {
+        font-size: 7px;
+        letter-spacing: 0.2em;
+    }
+
+    .continuum-controls {
+        margin-top: 20px;
+    }
+
+    .continuum-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+
+    /* -----------------------------------------
+       CARD
+    ----------------------------------------- */
+
+    .continuum-wrapper {
+        width: 90%;
+    }
+
+    .continuum-track {
+        gap: 14px;
+    }
+
+    .continuum-card {
+        flex: 0 0 100%;
+        min-height: 485px;
+    }
+
+
+    /* -----------------------------------------
+       IMAGE
+    ----------------------------------------- */
+
+    .continuum-image {
+        height: 245px;
+    }
+
+    .image-stage {
+        left: 16px;
+        bottom: 14px;
+        font-size: 40px;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .continuum-content {
+        padding: 21px 20px 19px;
+    }
+
+    .continuum-top {
+        margin-bottom: 16px;
+    }
+
+    .continuum-number {
+        width: 34px;
+        height: 34px;
+    }
+
+    .continuum-content h3 {
+        font-size: 27px;
+    }
+
+    .continuum-content p {
+        font-size: 11px;
+        line-height: 1.65;
+    }
+
+    .continuum-card-footer {
+        padding-top: 16px;
+    }
+
+    .card-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------------------
+       PROGRESS
+    ----------------------------------------- */
+
+    .continuum-progress {
+        width: 90%;
+        gap: 9px;
+    }
+
+    .progress-number {
+        min-width: 50px;
+    }
+
+    .progress-current {
+        font-size: 19px;
+    }
+
+    .progress-label {
+        min-width: 55px;
+        font-size: 6.5px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .wellbeing-continuum {
+        padding-top: 55px;
+    }
+
+    .continuum-heading-wrap h2 {
+        font-size: 31px;
+    }
+
+    .continuum-card {
+        min-height: 470px;
+    }
+
+    .continuum-image {
+        height: 225px;
+    }
+
+    .continuum-content {
+        padding: 19px 18px 17px;
+    }
+
+    .continuum-content h3 {
+        font-size: 25px;
+    }
+
+    .continuum-content p {
+        font-size: 10.5px;
+    }
+
+    .progress-label {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICE OPTIMIZATION
+========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .continuum-card:hover {
+        transform: none;
+        box-shadow:
+            0 18px 55px
+            rgba(53, 24, 13, 0.08);
+    }
+
+    .continuum-card:hover
+    .continuum-image img {
+        transform: scale(1);
+    }
+
+    .continuum-card:hover
+    .card-arrow {
+        background: transparent;
+        color: var(--continuum-gold);
+        transform: none;
+    }
+
+    .continuum-wrapper {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .continuum-track,
+    .continuum-card,
+    .continuum-image img,
+    .continuum-btn,
+    .card-arrow,
+    .progress-line span {
+        transition: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FACILITIES
+   RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1400px) {
+
+    .facilities-container {
+        width: 94%;
+    }
+
+    .facility-card {
+        flex-basis: 315px;
+        width: 315px;
+    }
+
+    .facility-image {
+        height: 270px;
+    }
+
+    .facility-content h3 {
+        font-size: 27px;
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .facilities-section {
+        padding:
+            105px 0
+            100px;
+    }
+
+    .facilities-header {
+        margin-bottom: 60px;
+    }
+
+    .facilities-header h2 {
+        font-size:
+            clamp(
+                48px,
+                6vw,
+                70px
+            );
+    }
+
+    .facilities-header p {
+        font-size: 13px;
+    }
+
+    .facilities-track,
+    .facilities-group {
+        gap: 22px;
+    }
+
+    .facility-card {
+        flex-basis: 290px;
+        width: 290px;
+    }
+
+    .facility-image {
+        height: 245px;
+    }
+
+    .facility-content {
+        min-height: 225px;
+
+        padding:
+            24px
+            22px
+            24px;
+    }
+
+    .facility-content h3 {
+        font-size: 25px;
+    }
+
+    .facilities-slider-wrapper::before,
+    .facilities-slider-wrapper::after {
+        width: 80px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .facilities-section {
+        padding:
+            90px 0
+            85px;
+    }
+
+    .facilities-container {
+        width: 92%;
+    }
+
+    .facilities-header {
+        margin-bottom: 48px;
+    }
+
+    .facilities-header h2 {
+        font-size:
+            clamp(
+                45px,
+                7vw,
+                62px
+            );
+    }
+
+    .facilities-header p {
+        width: 90%;
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+    .facilities-track,
+    .facilities-group {
+        gap: 18px;
+    }
+
+    .facility-card {
+        flex-basis: 300px;
+        width: 300px;
+    }
+
+    .facility-image {
+        height: 235px;
+    }
+
+    .facility-content {
+        min-height: 215px;
+
+        padding:
+            23px
+            20px
+            22px;
+    }
+
+    .facility-category {
+        font-size: 8px;
+    }
+
+    .facility-content h3 {
+        font-size: 25px;
+    }
+
+    .facility-content p {
+        font-size: 11px;
+    }
+
+    .facilities-slider-wrapper::before,
+    .facilities-slider-wrapper::after {
+        width: 55px;
+    }
+
+    .facilities-cta {
+        margin-top: 55px;
+
+        padding-top: 25px;
+    }
+
+    .facilities-cta h3 {
+        font-size: 27px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .facilities-section {
+        padding:
+            75px 0
+            70px;
+    }
+
+    .facilities-container {
+        width: 100%;
+    }
+
+
+    /* HEADER */
+
+    .facilities-header {
+        width: 90%;
+
+        margin-bottom: 42px;
+    }
+
+    .facilities-eyebrow {
+        gap: 9px;
+
+        margin-bottom: 18px;
+
+        font-size: 8px;
+
+        letter-spacing:
+            0.22em;
+    }
+
+    .facilities-eyebrow span {
+        width: 22px;
+    }
+
+    .facilities-header h2 {
+        font-size: 45px;
+
+        line-height: 0.98;
+    }
+
+    .facilities-header p {
+        width: 100%;
+
+        margin-top: 22px;
+
+        font-size: 11px;
+
+        line-height: 1.8;
+    }
+
+
+    /* SLIDER */
+
+    .facilities-slider-wrapper {
+        margin-top: 5px;
+    }
+
+    .facilities-track,
+    .facilities-group {
+        gap: 14px;
+    }
+
+    .facilities-slider {
+        padding:
+            5px 0
+            25px;
+    }
+
+
+    /* CARD */
+
+    .facility-card {
+        flex-basis: 285px;
+        width: 285px;
+
+        border-radius: 8px;
+    }
+
+    .facility-image {
+        height: 230px;
+    }
+
+    .facility-content {
+        min-height: 220px;
+
+        padding:
+            22px
+            19px
+            21px;
+    }
+
+    .facility-content h3 {
+        font-size: 27px;
+    }
+
+    .facility-content p {
+        margin-top: 13px;
+
+        font-size: 10px;
+
+        line-height: 1.75;
+    }
+
+
+    /* EDGE FADE */
+
+    .facilities-slider-wrapper::before,
+    .facilities-slider-wrapper::after {
+        width: 35px;
+    }
+
+
+    /* CTA */
+
+    .facilities-cta {
+        width: 90%;
+
+        margin:
+            45px auto 0;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .facilities-cta h3 {
+        font-size: 27px;
+    }
+
+    .facilities-cta > a {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .facilities-section {
+        padding:
+            65px 0
+            60px;
+    }
+
+    .facilities-header h2 {
+        font-size: 40px;
+    }
+
+    .facilities-header p {
+        font-size: 10px;
+    }
+
+    .facility-card {
+        flex-basis: 270px;
+        width: 270px;
+    }
+
+    .facility-image {
+        height: 215px;
+    }
+
+    .facility-content {
+        min-height: 210px;
+
+        padding:
+            20px
+            17px;
+    }
+
+    .facility-content h3 {
+        font-size: 25px;
+    }
+
+    .facilities-cta h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .facility-card {
+        flex-basis: 250px;
+        width: 250px;
+    }
+
+    .facility-image {
+        height: 200px;
+    }
+
+    .facilities-header h2 {
+        font-size: 36px;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================================
+   SRI SRI WELLBEING
+   THERAPY COLLECTION
+   FINAL RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .therapy-section {
+        padding: 85px 0 70px;
+    }
+
+    .therapy-header {
+        padding: 0 5%;
+        margin-bottom: 50px;
+    }
+
+    .therapy-heading h2 {
+        font-size: 55px;
+    }
+
+    .therapy-group {
+        gap: 20px;
+    }
+
+    .therapy-track {
+        gap: 20px;
+    }
+
+    .therapy-card {
+        flex-basis: 315px;
+        width: 315px;
+        min-height: 455px;
+    }
+
+    .therapy-image {
+        height: 235px;
+    }
+
+    .therapy-body {
+        padding: 22px 21px;
+    }
+
+    .therapy-bottom {
+        padding: 0 5%;
+    }
+}
+
+
+/* =========================================================
+   900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .therapy-section {
+        padding: 75px 0 60px;
+    }
+
+    .therapy-header {
+        align-items: flex-start;
+        margin-bottom: 42px;
+    }
+
+    .therapy-heading {
+        max-width: 650px;
+    }
+
+    .therapy-heading h2 {
+        font-size: 46px;
+    }
+
+    .therapy-heading p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .therapy-header-mark {
+        display: none;
+    }
+
+    .therapy-track,
+    .therapy-group {
+        gap: 18px;
+    }
+
+    .therapy-card {
+        flex-basis: 295px;
+        width: 295px;
+        min-height: 430px;
+    }
+
+    .therapy-image {
+        height: 220px;
+    }
+
+    .therapy-body {
+        padding: 21px 20px;
+    }
+
+    .therapy-body h3 {
+        font-size: 21px;
+    }
+
+    .therapy-body p {
+        font-size: 13px;
+    }
+
+    .therapy-bottom {
+        margin-top: 50px;
+    }
+}
+
+
+/* =========================================================
+   768px — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .therapy-section {
+        width: 100%;
+        padding: 60px 0 50px;
+
+        overflow: hidden;
+    }
+
+
+    /* -----------------------------------------
+       HEADER
+    ----------------------------------------- */
+
+    .therapy-header {
+        display: block;
+
+        width: 100%;
+
+        margin-bottom: 32px;
+
+        padding: 0 20px;
+    }
+
+    .therapy-eyebrow {
+        gap: 9px;
+
+        margin-bottom: 13px;
+
+        font-size: 9px;
+        letter-spacing: 0.15em;
+    }
+
+    .therapy-eyebrow span {
+        width: 25px;
+    }
+
+    .therapy-heading h2 {
+        margin-bottom: 15px;
+
+        font-size: 36px;
+        line-height: 1.08;
+
+        letter-spacing: -0.025em;
+    }
+
+    .therapy-heading p {
+        max-width: 100%;
+
+        font-size: 13.5px;
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------
+       SLIDER
+    ----------------------------------------- */
+
+    .therapy-slider {
+        width: 100%;
+
+        overflow: hidden;
+    }
+
+    .therapy-track {
+        gap: 16px;
+
+        /*
+         * Finger horizontal swipe.
+         * Vertical page scrolling still works.
+         */
+        touch-action: pan-y;
+
+        cursor: grab;
+    }
+
+    .therapy-track.is-dragging {
+        cursor: grabbing;
+    }
+
+    .therapy-group {
+        gap: 16px;
+    }
+
+
+    /* -----------------------------------------
+       CARD
+    ----------------------------------------- */
+
+    .therapy-card {
+        flex: 0 0 280px;
+
+        width: 280px;
+
+        min-height: 400px;
+
+        box-shadow:
+            0 8px 28px rgba(53,24,13,0.065);
+    }
+
+    .therapy-card:hover {
+        transform: none;
+
+        box-shadow:
+            0 8px 28px rgba(53,24,13,0.065);
+    }
+
+
+    /* -----------------------------------------
+       IMAGE
+    ----------------------------------------- */
+
+    .therapy-image {
+        height: 205px;
+    }
+
+    .therapy-card:hover .therapy-image img {
+        transform: none;
+    }
+
+
+    /* -----------------------------------------
+       BODY
+    ----------------------------------------- */
+
+    .therapy-body {
+        padding: 20px 19px 19px;
+    }
+
+    .therapy-meta {
+        margin-bottom: 11px;
+    }
+
+    .therapy-meta span {
+        font-size: 8px;
+    }
+
+    .therapy-body h3 {
+        margin-bottom: 9px;
+
+        font-size: 20px;
+    }
+
+    .therapy-body p {
+        font-size: 12.5px;
+        line-height: 1.65;
+    }
+
+    .therapy-link {
+        padding-top: 16px;
+
+        font-size: 11px;
+    }
+
+
+    /* -----------------------------------------
+       BOTTOM
+    ----------------------------------------- */
+
+    .therapy-bottom {
+        margin-top: 42px;
+
+        padding: 0 20px;
+    }
+
+    .therapy-bottom-label {
+        gap: 9px;
+
+        padding-top: 14px;
+    }
+
+    .therapy-bottom-label span {
+        font-size: 7px;
+        letter-spacing: 0.14em;
+    }
+
+    .therapy-bottom-label i {
+        font-size: 7px;
+    }
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .therapy-section {
+        padding: 52px 0 45px;
+    }
+
+    .therapy-header {
+        padding: 0 16px;
+        margin-bottom: 28px;
+    }
+
+    .therapy-heading h2 {
+        font-size: 32px;
+    }
+
+    .therapy-heading p {
+        font-size: 13px;
+    }
+
+    .therapy-track,
+    .therapy-group {
+        gap: 14px;
+    }
+
+    .therapy-card {
+        flex-basis: 265px;
+        width: 265px;
+
+        min-height: 380px;
+    }
+
+    .therapy-image {
+        height: 190px;
+    }
+
+    .therapy-body {
+        padding: 18px 17px;
+    }
+
+    .therapy-body h3 {
+        font-size: 19px;
+    }
+
+    .therapy-body p {
+        font-size: 12px;
+    }
+
+    .therapy-bottom {
+        padding: 0 16px;
+    }
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .therapy-section {
+        padding: 45px 0 40px;
+    }
+
+    .therapy-header {
+        padding: 0 14px;
+        margin-bottom: 25px;
+    }
+
+    .therapy-eyebrow {
+        font-size: 8px;
+    }
+
+    .therapy-heading h2 {
+        font-size: 29px;
+    }
+
+    .therapy-heading p {
+        font-size: 12.5px;
+        line-height: 1.65;
+    }
+
+    .therapy-track,
+    .therapy-group {
+        gap: 13px;
+    }
+
+    .therapy-card {
+        flex-basis: 250px;
+        width: 250px;
+
+        min-height: 360px;
+    }
+
+    .therapy-image {
+        height: 178px;
+    }
+
+    .therapy-index {
+        top: 14px;
+        left: 14px;
+
+        font-size: 9px;
+    }
+
+    .therapy-image-label {
+        left: 14px;
+        bottom: 13px;
+
+        font-size: 8px;
+    }
+
+    .therapy-body {
+        padding: 17px 16px;
+    }
+
+    .therapy-meta {
+        gap: 7px;
+        margin-bottom: 10px;
+    }
+
+    .therapy-meta span {
+        font-size: 7.5px;
+    }
+
+    .therapy-body h3 {
+        font-size: 18px;
+    }
+
+    .therapy-body p {
+        font-size: 11.5px;
+        line-height: 1.6;
+    }
+
+    .therapy-link {
+        padding-top: 14px;
+        font-size: 10px;
+    }
+
+    .therapy-bottom {
+        margin-top: 35px;
+        padding: 0 14px;
+    }
+
+    .therapy-bottom-label {
+        gap: 7px;
+    }
+
+    .therapy-bottom-label span {
+        font-size: 6.5px;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .therapy-section {
+        padding: 40px 0 35px;
+    }
+
+    .therapy-header {
+        padding: 0 12px;
+    }
+
+    .therapy-heading h2 {
+        font-size: 26px;
+    }
+
+    .therapy-heading p {
+        font-size: 12px;
+    }
+
+    .therapy-track,
+    .therapy-group {
+        gap: 12px;
+    }
+
+    .therapy-card {
+        flex-basis: 235px;
+        width: 235px;
+
+        min-height: 340px;
+    }
+
+    .therapy-image {
+        height: 165px;
+    }
+
+    .therapy-body {
+        padding: 15px;
+    }
+
+    .therapy-body h3 {
+        font-size: 17px;
+    }
+
+    .therapy-body p {
+        font-size: 11px;
+    }
+
+    .therapy-bottom {
+        padding: 0 12px;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .therapy-card:hover {
+        transform: none;
+    }
+
+    .therapy-card:hover .therapy-image img {
+        transform: none;
+    }
+
+    .therapy-image-hover {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .therapy-card,
+    .therapy-image img,
+    .therapy-image-hover,
+    .therapy-link,
+    .therapy-link strong {
+        transition: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .wellness-visual-section {
+        padding: 22px;
+    }
+
+    .wellness-visual-section::before {
+        inset: 22px;
+    }
+
+    .wellness-visual-image {
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+
+    .wellness-visual-section:hover .wellness-visual-image {
+        transform: scale(1.015);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .wellness-visual-section {
+        padding: 15px;
+    }
+
+    .wellness-visual-section::before {
+        inset: 15px;
+        border-color: rgba(255, 248, 239, 0.28);
+    }
+
+    .wellness-visual-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .wellness-visual-section:hover .wellness-visual-image {
+        transform: scale(1.01);
+    }
+
+    .wellness-visual-section::after {
+        width: 280px;
+        height: 180px;
+        bottom: -100px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .wellness-visual-section {
+        padding: 10px;
+    }
+
+    .wellness-visual-section::before {
+        inset: 10px;
+    }
+
+    .wellness-visual-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+/* =========================================================
+   TESTIMONIAL RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .testimonials {
+        padding: 105px 0 100px;
+    }
+
+    .testimonial-heading {
+        margin-bottom: 55px;
+    }
+
+    .testimonial-heading h2 {
+        font-size: clamp(48px, 7vw, 68px);
+    }
+
+    .testimonial-slider {
+        width: 94%;
+        gap: 15px;
+    }
+
+    .testimonial-track {
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        flex-basis: calc((100% - 20px) / 2);
+
+        min-height: 380px;
+
+        padding: 42px 34px 34px;
+    }
+
+    .testimonial-btn {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .testimonials {
+        padding: 85px 0 80px;
+    }
+
+
+    /* Heading */
+
+    .testimonial-heading {
+        width: 88%;
+
+        margin-bottom: 38px;
+    }
+
+    .testimonial-heading > span {
+        font-size: 9px;
+        letter-spacing: 0.2em;
+
+        gap: 10px;
+    }
+
+    .testimonial-heading > span::before,
+    .testimonial-heading > span::after {
+        width: 18px;
+    }
+
+    .testimonial-heading h2 {
+        font-size: clamp(43px, 13vw, 58px);
+
+        line-height: 0.98;
+    }
+
+
+    /* Slider */
+
+    .testimonial-slider {
+        width: 100%;
+
+        display: block;
+    }
+
+
+    .testimonial-window {
+        width: 88%;
+
+        margin: 0 auto;
+
+        padding:
+            12px 4px
+            30px;
+    }
+
+
+    .testimonial-track {
+        gap: 0;
+    }
+
+
+    .testimonial-card {
+        flex: 0 0 100%;
+
+        min-height: 380px;
+
+        padding: 42px 28px 30px;
+    }
+
+
+    /* Mobile arrows */
+
+    .testimonial-btn {
+        position: absolute;
+
+        top: 50%;
+
+        z-index: 10;
+
+        width: 44px;
+        height: 44px;
+
+        background: #fffdf8;
+
+        box-shadow:
+            0 8px 25px rgba(53, 24, 13, 0.12);
+    }
+
+
+    .testimonial-btn.prev {
+        left: 3%;
+    }
+
+
+    .testimonial-btn.next {
+        right: 3%;
+    }
+
+
+    .testimonial-card p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    .quote {
+        font-size: 90px;
+
+        top: 15px;
+        right: 20px;
+    }
+
+
+    /* Dots */
+
+    .testimonial-dots {
+        width: 90%;
+
+        margin-top: 15px;
+
+        gap: 6px;
+    }
+
+
+    .testimonial-dots button {
+        width: 18px;
+    }
+
+
+    .testimonial-dots button.active {
+        width: 42px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .testimonials {
+        padding: 70px 0;
+    }
+
+
+    .testimonial-card {
+        min-height: 400px;
+
+        padding:
+            38px 24px
+            27px;
+    }
+
+
+    .testimonial-card p {
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    .testimonial-user strong {
+        font-size: 11px;
+    }
+
+
+    .avatar {
+        width: 38px;
+        height: 38px;
+
+        font-size: 16px;
+    }
+
+
+    .testimonial-btn {
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .testimonial-track,
+    .testimonial-card,
+    .testimonial-btn,
+    .testimonial-dots button,
+    .testimonials .testimonial-heading,
+    .testimonials .testimonial-slider,
+    .testimonials .testimonial-dots {
+        transition: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FAQ SECTION — RESPONSIVE DESIGN
+===================================================== */
+
+/* Tablets */
+
+@media (max-width: 1024px) {
+
+    .faq-section {
+        padding: 85px 5%;
+    }
+
+    .faq-heading {
+        margin-bottom: 45px;
+    }
+
+    .faq-heading h2 {
+        font-size: clamp(38px, 6vw, 58px);
+    }
+
+    .faq-item summary {
+        font-size: 17px;
+        min-height: 70px;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+    }
+
+}
+
+/* Mobile Devices */
+
+@media (max-width: 768px) {
+
+    .faq-section {
+        padding: 70px 24px;
+    }
+
+    .faq-container {
+        max-width: 100%;
+    }
+
+    .faq-heading {
+        margin-bottom: 35px;
+    }
+
+    .faq-eyebrow {
+        font-size: 10px;
+        letter-spacing: 0.16em;
+    }
+
+    .faq-heading h2 {
+        font-size: 42px;
+        line-height: 1.08;
+    }
+
+    .faq-heading p {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .faq-heading-line {
+        margin-top: 22px;
+    }
+
+    .faq-item summary {
+        min-height: 65px;
+        padding: 18px 40px 18px 0;
+
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .faq-item summary::after {
+        right: 0;
+        font-size: 25px;
+    }
+
+    .faq-answer {
+        padding: 0 10px 20px 0;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .faq-note {
+        margin-top: 25px;
+        font-size: 11px;
+    }
+
+}
+
+/* Small Mobile Devices */
+
+@media (max-width: 480px) {
+
+    .faq-section {
+        padding: 60px 20px;
+    }
+
+    .faq-heading h2 {
+        font-size: 36px;
+    }
+
+    .faq-heading p {
+        font-size: 13px;
+    }
+
+    .faq-item summary {
+        font-size: 15px;
+        padding: 17px 35px 17px 0;
+    }
+
+    .faq-item summary::after {
+        font-size: 23px;
+    }
+
+    .faq-answer p {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FAQ ACCORDION
+   Sri Sri Wellbeing Chennai
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(function (item) {
+
+        item.addEventListener("toggle", function () {
+
+            if (item.open) {
+
+                faqItems.forEach(function (otherItem) {
+
+                    if (otherItem !== item) {
+                        otherItem.open = false;
+                    }
+
+                });
+
+            }
+
+        });
+
+    });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FOOTER RESPONSIVE OVERRIDES
+========================================================= */
+
+
+/* ---------- Large Tablet ---------- */
+
+@media (max-width: 1100px) {
+
+    .wellness-footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .footer-left h2 {
+        font-size: 40px;
+    }
+
+    .map-heading h2 {
+        font-size: 38px;
+    }
+
+    .map-button {
+        padding: 11px 15px;
+    }
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 850px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-left {
+        max-width: 700px;
+    }
+
+    .mission-text {
+        max-width: 620px;
+    }
+
+    .footer-map {
+        width: 100%;
+    }
+
+    .map-wrapper {
+        height: 380px;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    .wellness-footer {
+        padding: 55px 20px 25px;
+    }
+
+    .footer-container {
+        gap: 45px;
+    }
+
+    .footer-label {
+        font-size: 9px;
+        letter-spacing: 2.3px;
+    }
+
+    .footer-left h2 {
+        font-size: 36px;
+    }
+
+    .mission-text {
+        font-size: 13.5px;
+    }
+
+    .contact-links {
+        gap: 14px;
+    }
+
+    .contact-item {
+        font-size: 13px;
+    }
+
+    .map-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .map-heading h2 {
+        font-size: 36px;
+    }
+
+    .map-button {
+        width: auto;
+    }
+
+    .map-wrapper {
+        height: 300px;
+    }
+
+    .footer-divider {
+        margin: 50px auto 25px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        order: 1;
+    }
+
+    .copyright {
+        order: 2;
+    }
+
+    .footer-bottom::after {
+        order: 3;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* ---------- Very Small Screens ---------- */
+
+@media (max-width: 380px) {
+
+    .wellness-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-left h2,
+    .map-heading h2 {
+        font-size: 31px;
+    }
+
+    .map-wrapper {
+        height: 270px;
+    }
+
+    .map-button {
+        width: 100%;
+    }
+
+    .contact-item {
+        align-items: flex-start;
+    }
+
+    .contact-icon {
+        flex-shrink: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   SRI SRI WELLBEING
+   AI CONCIERGE + WHATSAPP
+   FINAL RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    #floatingActions {
+        right: 18px;
+        bottom: 20px;
+
+        gap: 10px;
+    }
+
+
+    #floatingActions .whatsapp-float,
+    #floatingActions .ai-open {
+        width: 170px;
+        height: 50px;
+    }
+
+
+    #floatingActions .whatsapp-icon,
+    #floatingActions .ai-open-icon {
+        width: 39px;
+        height: 39px;
+
+        flex-basis: 39px;
+    }
+
+
+    #floatingActions .whatsapp-pulse {
+        width: 39px;
+        height: 39px;
+
+        top: 5px;
+        left: 6px;
+    }
+
+
+    #floatingActions .whatsapp-label,
+    #floatingActions .ai-open-text {
+        font-size: 11px;
+
+        margin-left: 10px;
+    }
+
+
+    #floatingActions .whatsapp-arrow,
+    #floatingActions .ai-open-arrow {
+        font-size: 17px;
+    }
+
+
+    /* AI PANEL */
+
+    #aiConcierge .ai-panel {
+        right: 20px;
+
+        width: min(450px, calc(100vw - 40px));
+
+        max-height: calc(100vh - 40px);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    #floatingActions {
+        right: 12px;
+        bottom: 13px;
+
+        gap: 8px;
+    }
+
+
+    #floatingActions .whatsapp-float,
+    #floatingActions .ai-open {
+        width: 154px;
+        height: 47px;
+
+        padding: 4px 8px 4px 5px;
+    }
+
+
+    #floatingActions .whatsapp-icon,
+    #floatingActions .ai-open-icon {
+        width: 37px;
+        height: 37px;
+
+        flex-basis: 37px;
+    }
+
+
+    #floatingActions .whatsapp-pulse {
+        width: 37px;
+        height: 37px;
+
+        left: 5px;
+        top: 5px;
+    }
+
+
+    #floatingActions .whatsapp-icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+
+    #floatingActions .whatsapp-label,
+    #floatingActions .ai-open-text {
+        margin-left: 8px;
+
+        font-size: 10px;
+
+        letter-spacing: .02em;
+    }
+
+
+    #floatingActions .whatsapp-arrow,
+    #floatingActions .ai-open-arrow {
+        font-size: 16px;
+    }
+
+
+    /* AI PANEL */
+
+    #aiConcierge .ai-panel {
+        top: auto;
+
+        right: 8px;
+        bottom: 8px;
+
+        width: calc(100vw - 16px);
+
+        max-height: calc(100vh - 16px);
+
+        border-radius: 19px;
+
+        transform:
+            translateY(25px)
+            scale(.97);
+    }
+
+
+    #aiConcierge .ai-panel.active {
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+
+    /* HEADER */
+
+    #aiConcierge .ai-header {
+        grid-template-columns: 48px 1fr 38px;
+
+        gap: 11px;
+
+        padding: 17px;
+    }
+
+
+    #aiConcierge .ai-robot {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    #aiConcierge .ai-header h2 {
+        font-size: 18px;
+    }
+
+
+    #aiConcierge .ai-header p {
+        font-size: 10px;
+    }
+
+
+    #aiConcierge .ai-close {
+        width: 38px;
+        height: 38px;
+
+        font-size: 24px;
+    }
+
+
+    #aiConcierge .ai-badges span {
+        padding: 5px 8px;
+
+        font-size: 8px;
+    }
+
+
+    /* NAV */
+
+    #aiConcierge .ai-nav-btn {
+        min-height: 39px;
+
+        font-size: 9px;
+    }
+
+
+    /* PAGES */
+
+    #aiConcierge .ai-page {
+        padding: 14px;
+    }
+
+
+    #aiConcierge .ai-message {
+        padding: 17px;
+
+        border-radius: 15px;
+    }
+
+
+    #aiConcierge .ai-message p {
+        font-size: 12px;
+    }
+
+
+    /* ACTIONS */
+
+    #aiConcierge .ai-actions {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+
+    /* THERAPY */
+
+    #aiConcierge .ai-card {
+        padding: 15px;
+
+        border-radius: 15px;
+    }
+
+
+    #aiConcierge .ai-card h3 {
+        font-size: 19px;
+    }
+
+
+    #aiConcierge .therapy-item {
+        min-height: 64px;
+
+        grid-template-columns: 37px 1fr 20px;
+
+        gap: 9px;
+
+        padding: 8px;
+    }
+
+
+    #aiConcierge .therapy-icon {
+        width: 37px;
+        height: 37px;
+    }
+
+
+    #aiConcierge .therapy-info strong {
+        font-size: 10px;
+    }
+
+
+    #aiConcierge .therapy-info small {
+        font-size: 8px;
+    }
+
+
+    #aiConcierge .therapy-arrow {
+        font-size: 16px;
+    }
+
+
+    /* FORM */
+
+    #aiConcierge .ai-form-group input,
+    #aiConcierge .ai-form-group select {
+        height: 42px;
+    }
+
+
+    #aiConcierge .ai-form-group textarea {
+        min-height: 72px;
+    }
+
+
+    /* FOOTER */
+
+    #aiConcierge .ai-footer {
+        padding: 9px;
+    }
+
+
+    #aiConcierge .ai-footer input {
+        height: 40px;
+    }
+
+
+    #aiConcierge .ai-footer button {
+        width: 40px;
+        height: 40px;
+
+        flex-basis: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    #floatingActions {
+        right: 8px;
+        bottom: 9px;
+
+        gap: 7px;
+    }
+
+
+    #floatingActions .whatsapp-float,
+    #floatingActions .ai-open {
+        width: 140px;
+        height: 43px;
+
+        padding: 4px 7px 4px 5px;
+    }
+
+
+    #floatingActions .whatsapp-icon,
+    #floatingActions .ai-open-icon {
+        width: 34px;
+        height: 34px;
+
+        flex-basis: 34px;
+    }
+
+
+    #floatingActions .whatsapp-pulse {
+        width: 34px;
+        height: 34px;
+
+        left: 5px;
+        top: 4px;
+    }
+
+
+    #floatingActions .whatsapp-label,
+    #floatingActions .ai-open-text {
+        margin-left: 7px;
+
+        font-size: 9px;
+    }
+
+
+    #floatingActions .whatsapp-arrow,
+    #floatingActions .ai-open-arrow {
+        font-size: 14px;
+    }
+
+
+    /* AI */
+
+    #aiConcierge .ai-panel {
+        right: 6px;
+        bottom: 6px;
+
+        width: calc(100vw - 12px);
+
+        max-height: calc(100vh - 12px);
+
+        border-radius: 17px;
+    }
+
+
+    #aiConcierge .ai-header {
+        grid-template-columns: 43px 1fr 35px;
+
+        gap: 9px;
+
+        padding: 13px;
+    }
+
+
+    #aiConcierge .ai-robot {
+        width: 43px;
+        height: 43px;
+    }
+
+
+    #aiConcierge .ai-header h2 {
+        font-size: 16px;
+    }
+
+
+    #aiConcierge .ai-header p {
+        font-size: 9px;
+    }
+
+
+    #aiConcierge .ai-close {
+        width: 35px;
+        height: 35px;
+
+        font-size: 22px;
+    }
+
+
+    #aiConcierge .ai-page {
+        padding: 11px;
+    }
+
+
+    #aiConcierge .therapy-item {
+        min-height: 60px;
+
+        grid-template-columns: 35px 1fr 18px;
+
+        gap: 8px;
+    }
+
+
+    #aiConcierge .therapy-icon {
+        width: 35px;
+        height: 35px;
+
+        font-size: 9px;
+    }
+
+
+    #aiConcierge .therapy-info strong {
+        font-size: 9px;
+    }
+
+
+    #aiConcierge .therapy-info small {
+        font-size: 7.5px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL
+========================================================= */
+
+@media (max-width: 360px) {
+
+    #floatingActions {
+        right: 6px;
+        bottom: 7px;
+    }
+
+
+    #floatingActions .whatsapp-float,
+    #floatingActions .ai-open {
+        width: 128px;
+        height: 40px;
+    }
+
+
+    #floatingActions .whatsapp-icon,
+    #floatingActions .ai-open-icon {
+        width: 31px;
+        height: 31px;
+
+        flex-basis: 31px;
+    }
+
+
+    #floatingActions .whatsapp-pulse {
+        width: 31px;
+        height: 31px;
+    }
+
+
+    #floatingActions .whatsapp-label,
+    #floatingActions .ai-open-text {
+        margin-left: 6px;
+
+        font-size: 8px;
+    }
+
+
+    #floatingActions .whatsapp-arrow,
+    #floatingActions .ai-open-arrow {
+        font-size: 13px;
+    }
+
+}

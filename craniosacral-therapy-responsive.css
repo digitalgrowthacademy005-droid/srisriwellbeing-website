@@ -1,0 +1,817 @@
+/* =========================================================
+   SRI SRI WELLBEING – PANCHAKARMA PAGE
+   Responsive stylesheet
+========================================================= */
+
+@media (max-width: 1100px) {
+  .panchakarma-section { padding: 70px 4%; }
+  .panchakarma-container { grid-template-columns: 1fr; gap: 55px; }
+  .panchakarma-content { max-width: 800px; }
+  .panchakarma-visual { width: 100%; max-width: 850px; min-height: 580px; margin: auto; }
+  .therapy-image-wrap { width: 65%; height: 550px; }
+  .appointment-card { width: 43%; }
+  .footer-container { gap: 40px; }
+}
+
+@media (max-width: 700px) {
+
+  .panchakarma-section { padding: 55px 20px; }
+  .panchakarma-container { gap: 38px; }
+  .eyebrow { gap: 8px; font-size: 9px; letter-spacing: 1.5px; margin-bottom: 20px; }
+  .eyebrow-line { width: 35px; }
+  .panchakarma-title { font-size: clamp(43px,12vw,64px); letter-spacing: -1.5px; margin-bottom: 20px; }
+  .panchakarma-intro { font-size: 14px; line-height: 1.8; margin-bottom: 30px; }
+  .panchakarma-features { gap: 25px; margin-bottom: 30px; }
+  .panchakarma-feature { grid-template-columns: 46px 1fr; gap: 12px; }
+  .feature-icon { width: 46px; height: 46px; border-radius: 11px; }
+  .feature-icon svg { width: 23px; height: 23px; }
+  .feature-text { padding-left: 14px; }
+  .feature-text h3 { font-size: 20px; }
+  .feature-text p { font-size: 13px; line-height: 1.7; }
+  .panchakarma-actions { width: 100%; }
+  .panchakarma-btn { width: 100%; min-height: 49px; padding: 13px 18px; font-size: 13px; }
+  .panchakarma-visual { display: flex; flex-direction: column; align-items: stretch; min-height: auto; gap: 22px; }
+  .therapy-image-wrap { width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: 18px; }
+  .appointment-card { position: relative; top: auto; right: auto; transform: none; width: 100%; padding: 25px 22px; border-radius: 15px; }
+  .appointment-card h2 { font-size: 25px; }
+  .appointment-card > p { font-size: 13px; }
+  .appointment-card .contact-item { font-size: 13px; }
+
+  .faq-section { padding: 60px 20px; }
+  .faq-heading { margin-bottom: 30px; }
+  .faq-heading > p { font-size: 13px; }
+  .faq-item summary { padding: 18px 34px 18px 0; font-size: 14px; line-height: 1.5; }
+  .faq-answer { padding-right: 8px; }
+  .faq-answer p { font-size: 13px; }
+
+}
+
+/* HEADER – MATCH INDEX PAGE AT MOBILE WIDTH */
+
+@media (max-width: 768px) {
+
+  .header-container {
+    width: 100%;
+    min-height: 72px;
+    height: 72px;
+    padding: 0 12px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .site-header .logo {
+    flex: 0 0 auto;
+    margin-right: auto;
+  }
+
+  .site-header .logo img {
+    width: 75px;
+    max-width: 75px;
+    max-height: 54px;
+    object-fit: contain;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 0 0 auto;
+  }
+
+  .header-call-button {
+    min-height: 38px;
+    height: 38px;
+    padding: 0 8px;
+    gap: 5px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .header-call-button .call-icon {
+    font-size: 11px;
+  }
+
+  .contact-button {
+    min-height: 38px;
+    height: 38px;
+    min-width: 82px;
+    padding: 0 9px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .menu-toggle {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-toggle span {
+    width: 19px;
+  }
+
+  .main-menu {
+    padding: 25px 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+  
+/* =========================================================
+   FOOTER RESPONSIVE OVERRIDES
+========================================================= */
+
+
+/* ---------- Large Tablet ---------- */
+
+@media (max-width: 1100px) {
+
+    .wellness-footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .footer-left h2 {
+        font-size: 40px;
+    }
+
+    .map-heading h2 {
+        font-size: 38px;
+    }
+
+    .map-button {
+        padding: 11px 15px;
+    }
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 850px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-left {
+        max-width: 700px;
+    }
+
+    .mission-text {
+        max-width: 620px;
+    }
+
+    .footer-map {
+        width: 100%;
+    }
+
+    .map-wrapper {
+        height: 380px;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    .wellness-footer {
+        padding: 55px 20px 25px;
+    }
+
+    .footer-container {
+        gap: 45px;
+    }
+
+    .footer-label {
+        font-size: 9px;
+        letter-spacing: 2.3px;
+    }
+
+    .footer-left h2 {
+        font-size: 36px;
+    }
+
+    .mission-text {
+        font-size: 13.5px;
+    }
+
+    .contact-links {
+        gap: 14px;
+    }
+
+    .contact-item {
+        font-size: 13px;
+    }
+
+    .map-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .map-heading h2 {
+        font-size: 36px;
+    }
+
+    .map-button {
+        width: auto;
+    }
+
+    .map-wrapper {
+        height: 300px;
+    }
+
+    .footer-divider {
+        margin: 50px auto 25px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        order: 1;
+    }
+
+    .copyright {
+        order: 2;
+    }
+
+    .footer-bottom::after {
+        order: 3;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* ---------- Very Small Screens ---------- */
+
+@media (max-width: 380px) {
+
+    .wellness-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-left h2,
+    .map-heading h2 {
+        font-size: 31px;
+    }
+
+    .map-wrapper {
+        height: 270px;
+    }
+
+    .map-button {
+        width: 100%;
+    }
+
+    .contact-item {
+        align-items: flex-start;
+    }
+
+    .contact-icon {
+        flex-shrink: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   SRI SRI WELLBEING
+   AI CONCIERGE + WHATSAPP
+   FINAL RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    #floatingActions {
+        right: 18px;
+        bottom: 20px;
+
+        gap: 10px;
+    }
+
+
+    #floatingActions .whatsapp-float,
+    #floatingActions .ai-open {
+        width: 170px;
+        height: 50px;
+    }
+
+
+    #floatingActions .whatsapp-icon,
+    #floatingActions .ai-open-icon {
+        width: 39px;
+        height: 39px;
+
+        flex-basis: 39px;
+    }
+
+
+    #floatingActions .whatsapp-pulse {
+        width: 39px;
+        height: 39px;
+
+        top: 5px;
+        left: 6px;
+    }
+
+
+    #floatingActions .whatsapp-label,
+    #floatingActions .ai-open-text {
+        font-size: 11px;
+
+        margin-left: 10px;
+    }
+
+
+    #floatingActions .whatsapp-arrow,
+    #floatingActions .ai-open-arrow {
+        font-size: 17px;
+    }
+
+
+    /* AI PANEL */
+
+    #aiConcierge .ai-panel {
+        right: 20px;
+
+        width: min(450px, calc(100vw - 40px));
+
+        max-height: calc(100vh - 40px);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    #floatingActions {
+        right: 12px;
+        bottom: 13px;
+
+        gap: 8px;
+    }
+
+
+    #floatingActions .whatsapp-float,
+    #floatingActions .ai-open {
+        width: 154px;
+        height: 47px;
+
+        padding: 4px 8px 4px 5px;
+    }
+
+
+    #floatingActions .whatsapp-icon,
+    #floatingActions .ai-open-icon {
+        width: 37px;
+        height: 37px;
+
+        flex-basis: 37px;
+    }
+
+
+    #floatingActions .whatsapp-pulse {
+        width: 37px;
+        height: 37px;
+
+        left: 5px;
+        top: 5px;
+    }
+
+
+    #floatingActions .whatsapp-icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+
+    #floatingActions .whatsapp-label,
+    #floatingActions .ai-open-text {
+        margin-left: 8px;
+
+        font-size: 10px;
+
+        letter-spacing: .02em;
+    }
+
+
+    #floatingActions .whatsapp-arrow,
+    #floatingActions .ai-open-arrow {
+        font-size: 16px;
+    }
+
+
+    /* AI PANEL */
+
+    #aiConcierge .ai-panel {
+        top: auto;
+
+        right: 8px;
+        bottom: 8px;
+
+        width: calc(100vw - 16px);
+
+        max-height: calc(100vh - 16px);
+
+        border-radius: 19px;
+
+        transform:
+            translateY(25px)
+            scale(.97);
+    }
+
+
+    #aiConcierge .ai-panel.active {
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+
+    /* HEADER */
+
+    #aiConcierge .ai-header {
+        grid-template-columns: 48px 1fr 38px;
+
+        gap: 11px;
+
+        padding: 17px;
+    }
+
+
+    #aiConcierge .ai-robot {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    #aiConcierge .ai-header h2 {
+        font-size: 18px;
+    }
+
+
+    #aiConcierge .ai-header p {
+        font-size: 10px;
+    }
+
+
+    #aiConcierge .ai-close {
+        width: 38px;
+        height: 38px;
+
+        font-size: 24px;
+    }
+
+
+    #aiConcierge .ai-badges span {
+        padding: 5px 8px;
+
+        font-size: 8px;
+    }
+
+
+    /* NAV */
+
+    #aiConcierge .ai-nav-btn {
+        min-height: 39px;
+
+        font-size: 9px;
+    }
+
+
+    /* PAGES */
+
+    #aiConcierge .ai-page {
+        padding: 14px;
+    }
+
+
+    #aiConcierge .ai-message {
+        padding: 17px;
+
+        border-radius: 15px;
+    }
+
+
+    #aiConcierge .ai-message p {
+        font-size: 12px;
+    }
+
+
+    /* ACTIONS */
+
+    #aiConcierge .ai-actions {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+
+    /* THERAPY */
+
+    #aiConcierge .ai-card {
+        padding: 15px;
+
+        border-radius: 15px;
+    }
+
+
+    #aiConcierge .ai-card h3 {
+        font-size: 19px;
+    }
+
+
+    #aiConcierge .therapy-item {
+        min-height: 64px;
+
+        grid-template-columns: 37px 1fr 20px;
+
+        gap: 9px;
+
+        padding: 8px;
+    }
+
+
+    #aiConcierge .therapy-icon {
+        width: 37px;
+        height: 37px;
+    }
+
+
+    #aiConcierge .therapy-info strong {
+        font-size: 10px;
+    }
+
+
+    #aiConcierge .therapy-info small {
+        font-size: 8px;
+    }
+
+
+    #aiConcierge .therapy-arrow {
+        font-size: 16px;
+    }
+
+
+    /* FORM */
+
+    #aiConcierge .ai-form-group input,
+    #aiConcierge .ai-form-group select {
+        height: 42px;
+    }
+
+
+    #aiConcierge .ai-form-group textarea {
+        min-height: 72px;
+    }
+
+
+    /* FOOTER */
+
+    #aiConcierge .ai-footer {
+        padding: 9px;
+    }
+
+
+    #aiConcierge .ai-footer input {
+        height: 40px;
+    }
+
+
+    #aiConcierge .ai-footer button {
+        width: 40px;
+        height: 40px;
+
+        flex-basis: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    #floatingActions {
+        right: 8px;
+        bottom: 9px;
+
+        gap: 7px;
+    }
+
+
+    #floatingActions .whatsapp-float,
+    #floatingActions .ai-open {
+        width: 140px;
+        height: 43px;
+
+        padding: 4px 7px 4px 5px;
+    }
+
+
+    #floatingActions .whatsapp-icon,
+    #floatingActions .ai-open-icon {
+        width: 34px;
+        height: 34px;
+
+        flex-basis: 34px;
+    }
+
+
+    #floatingActions .whatsapp-pulse {
+        width: 34px;
+        height: 34px;
+
+        left: 5px;
+        top: 4px;
+    }
+
+
+    #floatingActions .whatsapp-label,
+    #floatingActions .ai-open-text {
+        margin-left: 7px;
+
+        font-size: 9px;
+    }
+
+
+    #floatingActions .whatsapp-arrow,
+    #floatingActions .ai-open-arrow {
+        font-size: 14px;
+    }
+
+
+    /* AI */
+
+    #aiConcierge .ai-panel {
+        right: 6px;
+        bottom: 6px;
+
+        width: calc(100vw - 12px);
+
+        max-height: calc(100vh - 12px);
+
+        border-radius: 17px;
+    }
+
+
+    #aiConcierge .ai-header {
+        grid-template-columns: 43px 1fr 35px;
+
+        gap: 9px;
+
+        padding: 13px;
+    }
+
+
+    #aiConcierge .ai-robot {
+        width: 43px;
+        height: 43px;
+    }
+
+
+    #aiConcierge .ai-header h2 {
+        font-size: 16px;
+    }
+
+
+    #aiConcierge .ai-header p {
+        font-size: 9px;
+    }
+
+
+    #aiConcierge .ai-close {
+        width: 35px;
+        height: 35px;
+
+        font-size: 22px;
+    }
+
+
+    #aiConcierge .ai-page {
+        padding: 11px;
+    }
+
+
+    #aiConcierge .therapy-item {
+        min-height: 60px;
+
+        grid-template-columns: 35px 1fr 18px;
+
+        gap: 8px;
+    }
+
+
+    #aiConcierge .therapy-icon {
+        width: 35px;
+        height: 35px;
+
+        font-size: 9px;
+    }
+
+
+    #aiConcierge .therapy-info strong {
+        font-size: 9px;
+    }
+
+
+    #aiConcierge .therapy-info small {
+        font-size: 7.5px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL
+========================================================= */
+
+@media (max-width: 360px) {
+
+    #floatingActions {
+        right: 6px;
+        bottom: 7px;
+    }
+
+
+    #floatingActions .whatsapp-float,
+    #floatingActions .ai-open {
+        width: 128px;
+        height: 40px;
+    }
+
+
+    #floatingActions .whatsapp-icon,
+    #floatingActions .ai-open-icon {
+        width: 31px;
+        height: 31px;
+
+        flex-basis: 31px;
+    }
+
+
+    #floatingActions .whatsapp-pulse {
+        width: 31px;
+        height: 31px;
+    }
+
+
+    #floatingActions .whatsapp-label,
+    #floatingActions .ai-open-text {
+        margin-left: 6px;
+
+        font-size: 8px;
+    }
+
+
+    #floatingActions .whatsapp-arrow,
+    #floatingActions .ai-open-arrow {
+        font-size: 13px;
+    }
+
+}
